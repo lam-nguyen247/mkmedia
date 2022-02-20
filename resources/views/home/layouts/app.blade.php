@@ -210,7 +210,7 @@
                 </div>
                 <div class="col-12 col-md-4 col-lg-3">
                     <div class="footer-content">
-                        <h3 class="title">Facebook</h3>
+                        <h3 class="title" data-cms="{{app()->getLocale()}}-layouts-app-footer-9">Facebook</h3>
                         <ul class="footer-list">
                             <li class="sub-item">
                                 <a href="/mua-group-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-5">Bán Group</a>
@@ -221,7 +221,7 @@
                 </div>
                 <div class="col-8 col-md-3 col-lg-3">
                     <div class="footer-content">
-                        <h3 class="title">@lang('Follow us')</h3>
+                        <h3 class="title" data-cms="{{app()->getLocale()}}-layouts-app-footer-10">@lang('Follow us')</h3>
                         <div class="fb-page" data-href="https://www.facebook.com/shopgroup.vn" data-tabs="timeline" data-width="" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/shopgroup.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shopgroup.vn">mkmedia.info</a></blockquote></div>
                     </div>
                 </div>
