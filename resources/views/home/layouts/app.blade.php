@@ -77,7 +77,7 @@
     <div id="navigation__title" class="navigation__title menu" >
         <nav class="site-nav">
             <ul class="my-menu">
-                <li class="my-item"><a href="/@lang('about-us')" class="navigation__link">@lang('About Us')</a></li>
+                {{-- <li class="my-item"><a href="/@lang('about-us')" class="navigation__link">@lang('About Us')</a></li> --}}
                 <li class="my-item">
                     <a href="#">Dịch vụ Facebook</a>
                     <ul class="sub-menu">
@@ -129,9 +129,9 @@
                         <div class="navigation__content">
                             <h4 class="navigation__lable" data-cms="{{app()->getLocale()}}-layouts-app-47">Menu</h4>
                             <ul class="navigation__list" id="navi-menu">
-                                <li class="navigation__item active">
+                                {{-- <li class="navigation__item active">
                                     <a href="/@lang('about-us')" class="navigation__link">►@lang('About Us')</a>
-                                </li>
+                                </li> --}}
                                 <li class="navigation__item">
                                     <p  class="navigation__link" >►Dịch vụ Facebook</p>
                                     <ul class="sub-menu">
