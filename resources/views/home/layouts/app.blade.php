@@ -222,7 +222,7 @@
                 <div class="col-8 col-md-3 col-lg-3">
                     <div class="footer-content">
                         <h3 class="title">@lang('Follow us')</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/shopgroup.vn" data-tabs="timeline" data-width="" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/mkmedia.info" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mkmedia.info">mkmedia.info</a></blockquote></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/shopgroup.vn" data-tabs="timeline" data-width="" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/shopgroup.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shopgroup.vn">mkmedia.info</a></blockquote></div>
                     </div>
                 </div>
             </div>
