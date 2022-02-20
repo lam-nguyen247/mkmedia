@@ -60,25 +60,18 @@
             <div class="box-service-home branding">
                 <div class="box-content row">
                     <div class="col-12 col-md-12 " style="text-align: center; padding-bottom:20px;">
-                       @if ($config->youtube??'' != null)
-                        <div class="video-container">
-                            <iframe width="100%"  src="{{$config->youtube??''}}?autoplay=1&mute=0" title="YouTube video player" frameborder="0"
-                            allowfullscreen allow='autoplay'></iframe>
-                        </div>
-                        @else
                         <div class="video-container" style="position: relative; text-align: right">
-                           <img style="width:100%" src="/images/mkmedia-bg-2.png"/>
-                           <div class="click">
-                            <div class="ring-circle"></div>
-                            <div class="ring-circle-fill"></div>
-                            <div class="ring-img-circle">
-                              <a href="/mua-group-facebook" class="btn-img">
-                                <img src="/images/home/click.png" width="50">
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                       @endif
+                            <img style="width:100%" src="/images/mkmedia-bg-2.png"/>
+                            <div class="click">
+                             <div class="ring-circle"></div>
+                             <div class="ring-circle-fill"></div>
+                             <div class="ring-img-circle">
+                               <a href="/mua-group-facebook" class="btn-img">
+                                 <img src="/images/home/click.png" width="50">
+                               </a>
+                             </div>
+                           </div>
+                         </div>
                     </div>
                 </div>
             </div>
