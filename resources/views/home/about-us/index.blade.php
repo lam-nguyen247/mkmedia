@@ -199,7 +199,7 @@
                             </li>
                             <li>
                                 <svg class="icon"><use xlink:href="#icon-plus"></use></svg>
-                                <span data-cms="{{app()->getLocale()}}-about-index-128">Digital Marketing/ SEO/ Google Adword,<br> Ads Facebook, Instagram</span>
+                                <span data-cms="{{app()->getLocale()}}-about-index-128">Digital Marketing/ SEO/ Google Adword,<br> AdsGroup Fanpage Instagram</span>
                             </li>
                             <li>
                                 <svg class="icon"><use xlink:href="#icon-plus"></use></svg>

@@ -3,7 +3,7 @@
     "English": "Tiếng Anh",
     "Home": "Trang Chủ",
     "Login": "Đăng Nhập",
-    "Login with Facebook": "Đăng nhập bằng Facebook",
+    "Login with": "Đăng nhập bằng",
     "Login with Google": "Đăng nhập bằng Google",
     "E-Mail Address": "Email",
     "Address": "Địa chỉ",
@@ -148,6 +148,6 @@
     "Next page": "Trang sau",
     "Channels": "Danh Sách Group",
     "channels": "mua-group-facebook",
-    "Buy-Channels": "Chuyển nhượng Group Facebook",
+    "Buy-Channels": "Chuyển nhượng Group",
     "buy-channels": "chuyen-nhuong-lai-group-facebook"
 }

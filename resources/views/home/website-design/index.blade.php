@@ -189,7 +189,7 @@
                                     <li data-cms="{{app()->getLocale()}}-website-index-161">CSM that can be intergrate to your system</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-162">Well written content that attract visitor</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-163">Logo design and brand identity</li>
-                                    <li data-cms="{{app()->getLocale()}}-website-index-164">Set up digital marketing (Google Adword, Facebook, Zalo,...)</li>
+                                    <li data-cms="{{app()->getLocale()}}-website-index-164">Set up digital marketing (Google Adword,Group Fanpage Zalo,...)</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-165">Cost-optimal advertisment with experience staff members</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-166">Identify new potential markets, design image and content for new business campain</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-167">Help your employee to adapt with the procedures of successful corporations that partner with us in the past</li>
@@ -214,7 +214,7 @@
                                     <li data-cms="{{app()->getLocale()}}-website-index-181">ERP, E-commerce payment system or anything you requested to integrated to the website</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-182">Well written content that attract visitor</li>
                                     <li data-cms="{{app()->getLocale()}}-website-index-183">Logo design and brand identity that suitable for your business</li>
-                                    <li data-cms="{{app()->getLocale()}}-website-index-184">Set up digital marketing (Google Adword, Facebook, Zalo,...)</li>
+                                    <li data-cms="{{app()->getLocale()}}-website-index-184">Set up digital marketing (Google Adword,Group Fanpage Zalo,...)</li>
                                 </ul>
                             </div>
                             <div class="btn-normal">

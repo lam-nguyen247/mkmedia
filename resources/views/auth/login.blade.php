@@ -53,7 +53,7 @@
                             <div class="row">
                                 <div class="col-xs-12 col-sm-12 col-md-12 mt-2 text-center">
                                     <div class="social mb-3">
-                                        <a href="/facebook/login" class="btn btn-facebook" data-toggle="tooltip" title="@lang('Login with Facebook')"> <i aria-hidden="true" class="fab fa-facebook-f"></i> </a>
+                                        <a href="/facebook/login" class="btn btn-facebook" data-toggle="tooltip" title="@lang('Login with')"> <i aria-hidden="true" class="fab fa-facebook-f"></i> </a>
                                         <a href="/google/login" class="btn btn-googleplus" data-toggle="tooltip" title="@lang('Login with Google')"> <i aria-hidden="true" class="fab fa-google-plus"></i> </a>
                                     </div>
                                 </div>

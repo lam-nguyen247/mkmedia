@@ -79,12 +79,12 @@
             <ul class="my-menu">
                 {{-- <li class="my-item"><a href="/@lang('about-us')" class="navigation__link">@lang('About Us')</a></li> --}}
                 <li class="my-item">
-                    <a href="#">Dịch vụ Facebook</a>
+                    <a href="#">Dịch vụ</a>
                     <ul class="sub-menu">
                         <li class="sub-item">
-                           <a href="/mua-group-facebook">Bán Group Facebook</a>
+                           <a href="/mua-group-facebook">Bán Group</a>
                         </li>
-                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage Facebook </a></li>
+                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage </a></li>
                     </ul>
                 </li class="my-item">
                 <li class="my-item"> <a href="/@lang('news')" class="navigation__link" >@lang('News')</a> </li>
@@ -133,12 +133,12 @@
                                     <a href="/@lang('about-us')" class="navigation__link">►@lang('About Us')</a>
                                 </li> --}}
                                 <li class="navigation__item">
-                                    <p  class="navigation__link" >►Dịch vụ Facebook</p>
+                                    <p  class="navigation__link" >►Dịch vụ</p>
                                     <ul class="sub-menu">
                                         <li class="sub-item">
-                                           <a href="/mua-group-facebook">Bán Group Facebook</a>
+                                           <a href="/mua-group-facebook">Bán Group</a>
                                         </li>
-                                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage Facebook </a></li>
+                                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage </a></li>
                                     </ul>
                                 </li>
                                 <li class="navigation__item">
@@ -213,9 +213,9 @@
                         <h3 class="title">Facebook</h3>
                         <ul class="footer-list">
                             <li class="sub-item">
-                                <a href="/mua-group-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-5">Bán Group Facebook</a>
+                                <a href="/mua-group-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-5">Bán Group</a>
                              </li>
-                             <li class="sub-item"> <a href="/mua-fanpage-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-6"> Bán Fanpage Facebook </a></li>
+                             <li class="sub-item"> <a href="/mua-fanpage-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-6"> Bán Fanpage </a></li>
                         </ul>
                     </div>
                 </div>
