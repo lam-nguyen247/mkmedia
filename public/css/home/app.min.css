@@ -2117,7 +2117,7 @@ header .header__nav .title {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 1.5px;
-  color: #2196F3;
+  color: #D4B639;
   transform: rotate(-90deg);
 }
 
@@ -2144,7 +2144,7 @@ header .header__nav .title {
 }
 
 .navigation__list .navigation__item.active .navigation__link {
-  color: #2196F3;
+  color: #D4B639;
   text-decoration: underline;
 }
 
@@ -2158,7 +2158,7 @@ header .header__nav .title {
 }
 
 .navigation__list .navigation__item .sub-menu .sub-item a:hover {
-  color: #2196F3 !important;
+  color: #D4B639 !important;
 }
 
 .navigation__info {
@@ -2548,7 +2548,7 @@ header .header__nav .title {
 }
 
 .grid-hero .box-hero .sub {
-  color: #2196F3;
+  color: #D4B639;
   font-weight: bold;
   font-size: 1rem;
   line-height: 2rem;
@@ -2564,7 +2564,7 @@ header .header__nav .title {
 }
 
 .grid-hero .box-hero .title .hero {
-  color: #2196F3;
+  color: #D4B639;
   letter-spacing: 0.2px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -2712,7 +2712,7 @@ header .header__nav .title {
   font-size: 1rem;
   line-height: 2rem;
   letter-spacing: 3.2px;
-  color: #2196F3;
+  color: #D4B639;
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 1rem;
@@ -3036,7 +3036,7 @@ header .header__nav .title {
 }
 
 .nav-timeline .fa-absolute {
-  color: #2196F3;
+  color: #D4B639;
   position: absolute;
   top: -2px;
   transform: translateY(-50%);
@@ -3382,7 +3382,7 @@ header .header__nav .title {
 }
 
 .support-list li svg {
-  fill: #2196F3;
+  fill: #D4B639;
   margin-right: 1rem;
 }
 
@@ -3451,7 +3451,7 @@ header .header__nav .title {
 }
 
 .grid-reason__list .grid-reason__list-item svg {
-  fill: #2196F3;
+  fill: #D4B639;
   vertical-align: middle;
   margin-right: 1rem;
 }
@@ -3516,7 +3516,7 @@ header .header__nav .title {
   line-height: 5rem;
   text-align: right;
   letter-spacing: 0.2px;
-  color: #2196F3;
+  color: #D4B639;
 }
 
 .box-work .box-work__title {
@@ -3767,7 +3767,7 @@ header .header__nav .title {
 }
 
 .grid-contact .grid-head a {
-  color: #2196F3;
+  color: #D4B639;
 }
 
 .grid-contact .grid-head .sapo {
@@ -3955,7 +3955,7 @@ form .btn-normal a:hover .btn-normal__title {
 }
 
 .box-item-solution .box-content {
-  border-top: 2px solid #2196F3;
+  border-top: 2px solid #D4B639;
   transition: height 1s ease;
 }
 
@@ -4000,7 +4000,7 @@ form .btn-normal a:hover .btn-normal__title {
 }
 
 .box-item-solution .box-btn svg {
-  fill: #2196F3;
+  fill: #D4B639;
   transform: rotate(180deg);
   vertical-align: middle;
   width: 1rem;
@@ -4217,12 +4217,12 @@ form .btn-normal a:hover .btn-normal__title {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 1.5px;
-  color: #2196F3;
+  color: #D4B639;
   margin-bottom: 0.5rem;
 }
 
 .box-news .box-subtitle a {
-  color: #2196F3;
+  color: #D4B639;
 }
 
 .box-news .box-title {
@@ -4408,7 +4408,7 @@ form .btn-normal a:hover .btn-normal__title {
 }
 
 .page-wrapper.page-contact .grid-contact .grid-head .sapo {
-  color: #2196F3;
+  color: #D4B639;
   letter-spacing: 1.5px;
   font-size: 1rem;
   font-weight: 600;
@@ -4488,7 +4488,7 @@ footer .footer-content .footer-list li {
 }
 
 footer .footer-content .footer-list li a:hover {
-  color: #2196F3;
+  color: #D4B639;
 }
 
 footer .footer-content .footer-list li i {
