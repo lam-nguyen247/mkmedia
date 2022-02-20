@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{{session('locale', $config->locale)}}" data-theme="{{session('theme', $config->theme)}}">
+<html lang="{{session('locale', $config->locale??'')}}" data-theme="{{session('theme',  $config->theme??'')}}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="google-site-verification" content="XrscSqm4bh48Nw0IZhyH-JO52qXBf45BcSy5xigkL2Y" />
-    <meta property="og:image" content="@yield('cover', '/images/home/logo-white.png')"/>
-    <meta property="og:image:alt" content="@yield('cover', '/images/home/logo-white.png')"/>
-    <meta name="twitter:image" content="@yield('cover', '/images/home/logo-white.png')"/>
+    <meta property="og:image" content="@yield('cover', '/images/home/mkmedia-logo.png')"/>
+    <meta property="og:image:alt" content="@yield('cover', '/images/home/mkmedia-logo.png')"/>
+    <meta name="twitter:image" content="@yield('cover', '/images/home/mkmedia-logo.png')"/>
     <meta property="og:url" content=" {{  Request::url() }} "/>
     <meta property="og:type" content=" {{  Request::url() }} "/>
     @isset($seo)
@@ -121,21 +121,6 @@
         </div>
     </div>
 
-    {{-- Dark/Light mode --}}
-    <div class="theme-switch-wrapper">
-        <label class="theme-switch" for="checkbox">
-            <input type="checkbox" id="checkbox" {{session('theme') == 'dark' ? 'checked' : '' }}>
-            <div class="slider round">
-                <svg class="icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="0.502638in" height="0.501575in" version="1.1" viewbox="0 0 502.64 501.57">
-                    <g id="Layer_x0020_1">
-                        <metadata id="CorelCorpID_0Corel-Layer"></metadata>
-                        <path class="fil0" d="M500.62 322.06c-38.53,9.01 -72.33,40.44 -155.22,25.45 -51.69,-9.35 -97.71,-37.16 -124.62,-64.83 -63.29,-65.09 -86.84,-158.41 -52.58,-248.15 3.59,-9.4 11.11,-21.61 13.05,-31.98 -85.44,28.76 -144,83.86 -171.61,170.21 -33.74,105.52 11.37,203.76 63.6,257.39 128.48,131.92 374.62,82.21 427.37,-108.09z"></path>
-                    </g>
-                </svg>
-            </div>
-        </label>
-    </div>
-
     <nav class="navigation__nav">
         <div class="container">
             <div class="row">
@@ -177,9 +162,9 @@
                             </div>
                             <div class="navigation__info">
                                 <ul class="navigation-list">
-                                    <li><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:{{$config->phone}}" title="Số điện thoại" data-cms="{{app()->getLocale()}}-layouts-app-70">0988.50.8769</a></li>
-                                    <li><span data-cms="{{app()->getLocale()}}-layouts-app-73">Email:</span> <a href="mailto:{{$config->email}}" title="Email" data-cms="{{app()->getLocale()}}-layouts-app-74">adgroup.vnn@gmail.com</a></li>
-                                    <li><i class="fa fa-map-marker" aria-hidden="true"></i> <span data-cms="{{app()->getLocale()}}-layouts-app-77">Zalo: 0988508769</span></li>
+                                    <li><span data-cms="{{app()->getLocale()}}-layouts-app-731">HotLine:</span><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:{{ $config->phone??''}}" title="Số điện thoại" data-cms="{{app()->getLocale()}}-layouts-app-70">0988.50.8769</a></li>
+                                    <li><span data-cms="{{app()->getLocale()}}-layouts-app-732">Email:</span> <a href="mailto:{{ $config->email??''}}" title="Email" data-cms="{{app()->getLocale()}}-layouts-app-74">adgroup.vnn@gmail.com</a></li>
+                                    <li><span data-cms="{{app()->getLocale()}}-layouts-app-733">Zalo:</span><i class="fa fa-map-marker" aria-hidden="true"></i> <span data-cms="{{app()->getLocale()}}-layouts-app-77">0988508769</span></li>
                                 </ul>
                             </div>
                         </div>
@@ -195,7 +180,7 @@
             <div class="col-6">
                 <div class="header__logo-box d-flex align-items-center">
                     <a href="/" title="logo">
-                        <img style="padding:10px" class="img-fluid" @src="/images/home/logo-white.png" alt="{{config('app.name')}}">
+                        <img style="padding:10px; border-radius: 50%;" class="img-fluid" @src="/images/home/mkmedia-logo.png" alt="{{config('app.name')}}">
                     </a>
                 </div>
             </div>
@@ -210,27 +195,27 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 col-lg-5">
+                <div class="col-12 col-md-4 col-lg-6">
                     <div class="footer-content">
                         <h1 style="font-size: 2rem" data-cms="{{app()->getLocale()}}-layouts-app-footer-1"  class="title">Thông tin công ty</h1>
                         <ul class="footer-list">
-                            <li><span>CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA</span></li>
-                            <li><span>Địa chỉ: Số 15A Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội</span></li>
-                            <li><span>Mã số thuế: 0109379379</span> </li>
-                            <li><a href="tel:+840988508769" title="Số điện thoại">Hotline: {{$config->phone}}</a></li>
-                            <li><span>Email:</span> <a href="mailto:{{$config->email}}" title="Email" >{{$config->email}}</a></li>
-                            <li><span>Zalo:</span> <a href="https://zalo.me/{{$config->zalo}}" title="Zalo" >{{$config->zalo}}</a></li>
+                            <li><span data-cms="{{app()->getLocale()}}-layouts-app-footer-2">CÔNG TY CỔ PHẦN CÔNG NGHỆ TRUYỀN THÔNG MK MEDIA</span></li>
+                            <li><span data-cms="{{app()->getLocale()}}-layouts-app-footer-3">Địa chỉ: Số 15A Ngõ 21/13 Lĩnh Nam - Hoàng Mai - Hà Nội</span></li>
+                            <li><span data-cms="{{app()->getLocale()}}-layouts-app-footer-4">Mã số thuế: 0109379379</span> </li>
+                            <li><a href="tel:+840988508769" title="Số điện thoại">Hotline: {{ $config->phone??''}}</a></li>
+                            <li><span>Email:</span> <a href="mailto:{{ $config->email??''}}" title="Email" >{{ $config->email??''}}</a></li>
+                            <li><span>Zalo:</span> <a href="https://zalo.me/{{ $config->zalo ??''}}" title="Zalo" >{{ $config->zalo ??''}}</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 col-lg-2">
+                <div class="col-12 col-md-4 col-lg-3">
                     <div class="footer-content">
                         <h3 class="title">Facebook</h3>
                         <ul class="footer-list">
                             <li class="sub-item">
-                                <a href="/mua-group-facebook">Bán Group Facebook</a>
+                                <a href="/mua-group-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-5">Bán Group Facebook</a>
                              </li>
-                             <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage Facebook </a></li>
+                             <li class="sub-item"> <a href="/mua-fanpage-facebook" data-cms="{{app()->getLocale()}}-layouts-app-footer-6"> Bán Fanpage Facebook </a></li>
                         </ul>
                     </div>
                 </div>
@@ -286,13 +271,13 @@
     <div class="zalo">
       <div class="ring">
             <div class="">
-                <a href="https://zalo.me/{{$config->zalo}}" class="btn-img" target="_blank">
+                <a href="https://zalo.me/{{ $config->zalo ??''}}" class="btn-img" target="_blank">
                 <img src="/images/home/communication.png" width="38">
           </a>
         </div>
       </div>
       <div class="bar">
-        <a href="https://zalo.me/{{$config->zalo}}" target="_blank">
+        <a href="https://zalo.me/{{ $config->zalo ??''}}" target="_blank">
           <span class="text-hotline">Zalo</span>
         </a>
       </div>

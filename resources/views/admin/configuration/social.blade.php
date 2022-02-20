@@ -13,7 +13,7 @@
                         <x-input name="facebook" value="{{$config->facebook}}" label="Facebook" />
                         <x-input name="instagram" value="{{$config->instagram}}" label="Instagram" />
                         <x-input name="twitter" value="{{$config->twitter}}" label="Twitter" />
-                        <x-input name="youtube" value="{{$config->youtube}}" label="Youtube" />
+                        <x-input name="youtube" value="{{$config->youtube??''}}" label="Youtube" />
                         <button type="submit" class="btn btn-success waves-effect waves-light mr-2">@lang('Save')</button>
                     </form>
                 </div>

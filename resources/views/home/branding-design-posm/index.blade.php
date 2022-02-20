@@ -223,8 +223,8 @@
                             </li>
                             <li>
                                 <div class="btn-normal">
-                                    <a href="tel:{{$config->phone}}" title="{{$config->phone}}">
-                                        <span class="btn-normal__title" data-cms="{{app()->getLocale()}}-brand-index-142">{{$config->phone}}</span>
+                                    <a href="tel:{{ $config->phone??''}}" title="{{ $config->phone??''}}">
+                                        <span class="btn-normal__title" data-cms="{{app()->getLocale()}}-brand-index-142">{{ $config->phone??''}}</span>
                                         <svg class="icon"><use xlink:href="#icon-arrow"></use></svg>
                                     </a>
                                 </div>

@@ -60,14 +60,23 @@
             <div class="box-service-home branding">
                 <div class="box-content row">
                     <div class="col-12 col-md-12 " style="text-align: center; padding-bottom:20px;">
-                       @if ($config->youtube != null)
+                       @if ($config->youtube??'' != null)
                         <div class="video-container">
-                            <iframe width="100%"  src="{{$config->youtube}}?autoplay=1&mute=0" title="YouTube video player" frameborder="0"
+                            <iframe width="100%"  src="{{$config->youtube??''}}?autoplay=1&mute=0" title="YouTube video player" frameborder="0"
                             allowfullscreen allow='autoplay'></iframe>
                         </div>
                         @else
-                        <div class="video-container">
-                           <img style="width:100%" src="/images/banner.jpg"/>
+                        <div class="video-container" style="position: relative; text-align: right">
+                           <img style="width:100%" src="/images/mkmedia-bg-2.png"/>
+                           <div class="click">
+                            <div class="ring-circle"></div>
+                            <div class="ring-circle-fill"></div>
+                            <div class="ring-img-circle">
+                              <a href="/mua-group-facebook" class="btn-img">
+                                <img src="/images/home/click.png" width="50">
+                              </a>
+                            </div>
+                          </div>
                         </div>
                        @endif
                     </div>
@@ -105,36 +114,5 @@
 @endsection
 
 @section('js')
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script>
-    Swal.fire({
-        width: 'auto',
-  title: '<strong>Nhu cầu của bạn?</u></strong>',
 
-  html:
-    `<div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
-        </div>
-        <a class='popup-btn' href='https://mkmedia.info/mua-group-facebook'> Tôi muốn: Mua group Facebook</a>
-    </div>
-    <div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
-        </div>
-        <a class='popup-btn' href='https://mkmedia.info/mua-fanpage-facebook'> Tôi muốn: Mua fanpage Facebook</a>
-    </div>
-    <div class='mybox'>
-        <div>
-            <img class='myimg' src='/images/home/share_img.png'>
-        </div>
-        <a class='popup-btn' href='https://mkmedia.info/mua-kenh-tiktok'> Tôi muốn: Mua kênh TikTok</a>
-    </div>
-    `,
-  showCloseButton: true,
-  confirmButtonText:
-    '<i class="fa fa-thumbs-up"></i> Hủy',
-  confirmButtonAriaLabel: 'Thumbs up, great!',
-})
-</script>
 @endsection

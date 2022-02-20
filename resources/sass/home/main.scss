@@ -8,10 +8,10 @@ $font-family: 'Montserrat',
 sans-serif !default;
 $bg-gray: #C4C4C4 !default;
 $bg-style-gray: #f2f2f2 !default;
-$bg-black: #1F2229 !default;
+$bg-black: #2196F3 !default;
 $bg-hero: #14161B !default;
 $color-black: #1F2229 !default;
-$bg-primary: #2196F3 !default;
+$bg-primary: #D4B639 !default;
 $bg-btn-icon: #B03939 !default;
 $bg-btn-icon-pale: #4F4F4F !default;
 :root {
@@ -20,21 +20,11 @@ $bg-btn-icon-pale: #4F4F4F !default;
     --color-black: #1F2229;
     --bg-black: #1F2229;
     --bg-btn-icon: #B03939;
-    --bg-primary: #2196F3;
+    --bg-primary: #D4B639;
     --bg-style-gray: #f2f2f2;
     --bg-style-gray-2: #e0e0e0;
-    --bg-hero: url('../../../public/images/home/1912x800-5.jpg');
-    --bg-hero-mb: url('../../../public/images/home/714x500-2.jpg')
-}
-
-[data-theme="dark"] {
-    --bg-white: #14161B;
-    --color-black: #fff;
-    --color-white: #1F2229;
-    --bg-style-gray: #1F2229;
-    --bg-style-gray-2: #1F2229;
-    --bg-hero: url('../../../public/images/home/1912x800-4.jpg');
-    --bg-hero-mb: url('../../../public/images/home/714x500-3.jpg')
+    --bg-hero: url('../../../public/images/home/mkmedia-bg.png');
+    --bg-hero-mb: url('../../../public/images/home/mkmedia-bg.png')
 }
 
 html {
@@ -730,10 +720,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(20, 22, 26, .8);
-    /* fallback for old browsers */
-    /* Chrome 10-25, Safari 5.1-6 */
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(33, 150, 243, .8);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1007,7 +994,7 @@ header {
 }
 
 .navigation__button {
-    background-color: #4F4F4F;
+    background-color: #D4B639;
     height: 41px;
     width: 41px;
     position: fixed;
@@ -1150,6 +1137,7 @@ header {
             max-width: 100%;
         }
     }
+
 }
 
 .navigation__checkbox:checked~.navigation__button,
@@ -1477,6 +1465,13 @@ header {
         .box-title {
             font-size: 15px !important;
         }
+    }
+    .click{
+        bottom: 60px !important;
+        right: 40px !important;
+    }
+    header .header__logo-box img {
+        height: 60px !important;
     }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1300px) {
@@ -3216,7 +3211,7 @@ footer {
     }
     .copyright {
         padding: 10px 0;
-        background: #17181b;
+        background: #3771BA;
         text-align: center;
         color: #fff;
         font-size: 0.85rem;
@@ -3415,7 +3410,7 @@ footer {
     svg.icon {
         height: 16px;
         width: 16px;
-        fill: #999;
+        fill: #D4B639;
         &:first-child {
             margin-right: 5px;
             display: none;
@@ -4600,4 +4595,142 @@ footer {
     color: white;
   }
 
+  .click {
+    position: relative;
+    visibility: visible;
+    background-color: transparent;
+    width: 110px;
+    height: 100px;
+    cursor: pointer;
+    z-index: 11;
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    transition: visibility .5s;
+    display: inline-block;
+    bottom: 150px;
+    right: 300px;
+    .ring-circle {
+        width: 105px;
+        height: 105px;
+        bottom: 100px;
+        left: 10px;
+        position: absolute;
+        background-color: transparent;
+        border-radius: 100%;
+        border: 2px solid #FECC2B;
+        -webkit-animation: circle-anim 1.2s infinite ease-in-out;
+        animation: circle-anim 1.2s infinite ease-in-out;
+        transition: all .5s;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        opacity: 0.5;
+    }
+    .ring-circle-fill {
+        width: 75px;
+        height: 75px;
+        top: 25px;
+        left: 25px;
+        position: absolute;
+        background-color: rgba(254, 204, 43, 0.7);
+        border-radius: 100%;
+        border: 2px solid transparent;
+        -webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;
+        animation: circle-fill-anim 2.3s infinite ease-in-out;
+        transition: all .5s;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+    }
+    .ring-img-circle {
+        background-color: #FECC2B;
+          width: 60px;
+        height: 60px;
+        top: 33px;
+        left: 33px;
+        position: absolute;
+        background-size: 20px;
+        border-radius: 100%;
+        border: 2px solid transparent;
+        -webkit-animation: circle-img-anim 1s infinite ease-in-out;
+        animation: circle-img-anim 1s infinite ease-in-out;
+        -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .ring-img-circle .pps-btn-img {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+    .ring-img-circle .btn-img img {
+        width: 30;
+        height: 30px;
+    }
+}
 
+
+
+
+.icon-click{
+    background: url('../../../public/images/home/click.png');
+}
+
+  @-webkit-keyframes circle-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(0.5) skew(1deg);
+      -webkit-opacity: 0.1;
+    }
+    30% {
+      -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+      -webkit-opacity: 0.5;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+      -webkit-opacity: 0.1;
+    }
+  }
+  @-webkit-keyframes circle-fill-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.6;
+    }
+    50% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(0.7) skew(1deg);
+      opacity: 0.6;
+    }
+  }
+  @-webkit-keyframes circle-img-anim {
+    0% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    10% {
+      -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    20% {
+      -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    30% {
+      -webkit-transform: rotate(-25deg) scale(1) skew(1deg);
+    }
+    40% {
+      -webkit-transform: rotate(25deg) scale(1) skew(1deg);
+    }
+    50% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+    100% {
+      -webkit-transform: rotate(0) scale(1) skew(1deg);
+    }
+  }

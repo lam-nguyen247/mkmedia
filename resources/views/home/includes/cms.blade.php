@@ -14,8 +14,8 @@
     }
     @endauth
 </style>
-{!! $config->css !!}
-{!! $config->js !!}
+{!!  $config->css??'' !!}
+{!!  $config->js??'' !!}
 <script src="/js/home/cms.min.js"></script>
 @include('home.includes.language')
 @auth
