@@ -83,9 +83,13 @@
     <div class="grid-service servicee">
         <div class="container">
             <div class="box-call">
-                <h3 class="title" data-cms="{{app()->getLocale()}}-index-24">Tại sao nên sở hữu một Group</h3>
+                <h3 class="title" data-cms="{{app()->getLocale()}}-index-24">Tại sao nên sở hữu một Group Facebook</h3>
                 <div class="sapo" style="max-width:740px">
                     <p style="text-align: left" data-cms="{{app()->getLocale()}}-index-26">
+                        ► Group Facebook giúp nâng tầm thương hiệu Sản Phẩm, Doanh Nghiệp của bạn.
+                        ► Đưa Sản Phẩm của bạn đến với khách hàng một cách tự nhiên mà không tốn phí.
+                        ► Group Facebook đem lại doanh thu cho bạn từ những đối tác quảng cáo SP.
+                        ► Group Facebook sức mạnh khủng khiếp đến từ cộng đồng!
                     </p>
                     <div class="btn-normal" style="margin-top: 10px;">
                         <a style="background: #4F4F4F; border-radius: 24px;" href="/@lang('channels')" title="Get to know us">
