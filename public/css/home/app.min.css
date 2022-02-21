@@ -2691,7 +2691,7 @@ header .header__nav .title {
 
 .grid-call {
   background: #D4B639;
-  padding: 7rem 0;
+  padding: 7rem 0 0 0;
 }
 
 .grid-call .btn-normal {
