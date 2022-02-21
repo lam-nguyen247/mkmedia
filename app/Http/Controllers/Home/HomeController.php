@@ -10,6 +10,7 @@ class HomeController extends Controller
 {
     public function index(Request $request)
     {
+        dd($request->all());
         $agent = new Agent();
         return view('home.index', compact('agent'));
     }
