@@ -84,7 +84,6 @@
                         <li class="sub-item">
                            <a href="/mua-group-facebook">Bán Group</a>
                         </li>
-                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage </a></li>
                     </ul>
                 </li class="my-item">
                 <li class="my-item"> <a href="/@lang('news')" class="navigation__link" >@lang('News')</a> </li>
@@ -138,7 +137,6 @@
                                         <li class="sub-item">
                                            <a href="/mua-group-facebook">Bán Group</a>
                                         </li>
-                                        <li class="sub-item"> <a href="/mua-fanpage-facebook"> Bán Fanpage </a></li>
                                     </ul>
                                 </li>
                                 <li class="navigation__item">
