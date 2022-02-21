@@ -44,7 +44,7 @@ class GoogleSheetApiCommand extends Command
         Log::debug('start update sheet 1 data');
 		$client = $this->getGoogleClient();
 		$service = new Google_Service_Sheets($client);
-		$spreadsheetId = env('GOOGLE_SHEET_ID');
+		$spreadsheetId = '1VT8A6swg0XoKOHtEHpv07zHKIibd7SyzZ5MPB9XmAMs';
 		$range = 'Group!A2:H';
 
 		// get values
