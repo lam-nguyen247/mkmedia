@@ -79,12 +79,7 @@
             <ul class="my-menu">
                 {{-- <li class="my-item"><a href="/@lang('about-us')" class="navigation__link">@lang('About Us')</a></li> --}}
                 <li class="my-item">
-                    <a href="#">Dịch vụ</a>
-                    <ul class="sub-menu">
-                        <li class="sub-item">
-                           <a href="/mua-group-facebook">Bán Group</a>
-                        </li>
-                    </ul>
+                    <a href="/mua-group-facebook">Danh sách Group</a>
                 </li class="my-item">
                 <li class="my-item"> <a href="/@lang('news')" class="navigation__link" >@lang('News')</a> </li>
                 <li class="my-item"> <a href="/@lang('contact')" class="navigation__link">@lang('Contact')</a></li>

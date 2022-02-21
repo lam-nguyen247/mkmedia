@@ -8,9 +8,9 @@
     <div class="grid-contact" id="grid-hero">
         <div class="container">
             <div class="grid-head">
-                <h2 class="title" data-cms="{{app()->getLocale()}}-contact-index-4">Hi. Please tell us <br> about your request!</h2>
+                <h2 class="title" data-cms="{{app()->getLocale()}}-contact-index-4"> Chào bạn <br> Vui lòng cho chúng tôi biết về yêu cầu của bạn!</h2>
                 <div class="sapo">
-                    <p data-cms="{{app()->getLocale()}}-contact-index-6">Fill out our form below or send us an email.</p>
+                    <p data-cms="{{app()->getLocale()}}-contact-index-6">Bạn hãy điền đầy đủ thông tin ở dưới.</p>
                 </div>
             </div>
             <div class="row">
@@ -19,29 +19,29 @@
                         <form class="form js-form">
                             <div class="row">
                                 <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-13">Company name</label>
+                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-13">Tiêu đè</label>
                                     <input required type="text" name="company" class="form-control">
                                 </div>
                                 <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-16">Your name</label>
+                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-16">Họ và tên của bạn</label>
                                     <input required type="text" name="name" class="form-control">
                                 </div>
                                 <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-19">Phone number</label>
+                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-19">Số điện thoại liên lạc</label>
                                     <input required type="number" name="phone" class="form-control">
                                 </div>
                                 <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-22">Email address</label>
+                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-22">Địa chỉ Email</label>
                                     <input required type="email" name="email" class="form-control">
                                 </div>
                                 <div class="form-group col-12">
-                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-25">Tell us about your request</label>
+                                    <label for="" data-cms="{{app()->getLocale()}}-contact-index-25">Nội dung liên hệ</label>
                                     <textarea name="content" class="form-control" rows="8"></textarea>
                                 </div>
                                 <div class="form-group col-12">
                                     <div class="btn-normal">
                                         <button class="btn button-submit" type="submit">
-                                            <span class="btn-normal__title" data-cms="{{app()->getLocale()}}-contact-index-30">GET started</span>
+                                            <span class="btn-normal__title" data-cms="{{app()->getLocale()}}-contact-index-30">Gửi</span>
                                             <svg class="icon"><use xlink:href="#icon-arrow"></use></svg>
                                         </button>
                                     </div>

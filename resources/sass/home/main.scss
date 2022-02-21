@@ -12,14 +12,14 @@ $bg-black: #2196F3 !default;
 $bg-hero: #14161B !default;
 $color-black: #1F2229 !default;
 $bg-primary: #D4B639 !default;
-$bg-btn-icon: #B03939 !default;
+$bg-btn-icon: #D4B639 !default;
 $bg-btn-icon-pale: #4F4F4F !default;
 :root {
     --color-white: #fff;
     --bg-white: #fff;
     --color-black: #1F2229;
     --bg-black: #1F2229;
-    --bg-btn-icon: #B03939;
+    --bg-btn-icon: #D4B639;
     --bg-primary: #D4B639;
     --bg-style-gray: #f2f2f2;
     --bg-style-gray-2: #e0e0e0;
@@ -1466,9 +1466,13 @@ header {
             font-size: 15px !important;
         }
     }
+    .box-price{
+        right: 0% !important;
+        bottom: -25px !important;
+        width: 100%;
+    }
     .click{
-        bottom: 60px !important;
-        right: 40px !important;
+
     }
     header .header__logo-box img {
         height: 60px !important;
@@ -4240,7 +4244,7 @@ footer {
         }
     }
     .grid-call {
-        padding: 5rem 0;
+        padding: 1rem 0 0 0;
     }
     .box-service-home {
         .box-image {
@@ -4595,6 +4599,15 @@ footer {
     color: white;
   }
 
+  .box-price{
+    right: 110px;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+      .btn-normal{
+        bottom: 30px;
+      }
+  }
   .click {
     position: relative;
     visibility: visible;
@@ -4607,8 +4620,6 @@ footer {
     -webkit-transform: translateZ(0);
     transition: visibility .5s;
     display: inline-block;
-    bottom: 150px;
-    right: 300px;
     .ring-circle {
         width: 105px;
         height: 105px;

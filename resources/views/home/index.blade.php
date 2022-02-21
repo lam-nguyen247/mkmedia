@@ -7,7 +7,11 @@
 <style>
     .mybox{
         display: inline-block;
-        width: 28%;
+        width: 48%;
+    }
+    .swal2-confirm{
+        background: #D4B639 !important;
+        border-color: #D4B639 !important;
     }
     .popup-btn {
         padding: 7px 19px;
@@ -16,7 +20,7 @@
         font-size: 20px;
         border: 1px solid #2196F3;
         display: block;
-        min-height: 64px;
+        min-height: 40px;
         text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
         margin: 10px;
         color: white
@@ -62,15 +66,23 @@
                     <div class="col-12 col-md-12 " style="text-align: center; padding-bottom:20px;">
                         <div class="video-container" style="position: relative; text-align: right">
                             <img style="width:100%" src="/images/mkmedia-bg-2.png"/>
-                            <div class="click">
-                             <div class="ring-circle"></div>
-                             <div class="ring-circle-fill"></div>
-                             <div class="ring-img-circle">
-                               <a href="/mua-group-facebook" class="btn-img">
-                                 <img src="/images/home/click.png" width="50">
-                               </a>
-                             </div>
-                           </div>
+                            <div class="box-price">
+                                <div class="btn-normal" style="margin-top: 10px; display: inline-block;">
+                                    <a style="background: #4F4F4F; border-radius: 24px;" href="/@lang('channels')" title="Get to know us">
+                                        <span style="color: white !important" class="btn-normal__title" data-cms="{{app()->getLocale()}}-index-330">Xem bảng giá</span>
+                                        <svg style="color: white !important" class="icon"><use xlink:href="#icon-arrow"></use></svg>
+                                    </a>
+                                </div>
+                                <div class="click">
+                                 <div class="ring-circle"></div>
+                                 <div class="ring-circle-fill"></div>
+                                 <div class="ring-img-circle">
+                                   <a href="/mua-group-facebook" class="btn-img">
+                                     <img src="/images/home/click.png" width="50">
+                                   </a>
+                                 </div>
+                               </div>
+                            </div>
                          </div>
                     </div>
                 </div>
@@ -107,5 +119,30 @@
 @endsection
 
 @section('js')
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    Swal.fire({
+        width: 'auto',
+  title: '<strong>Nhu cầu của bạn?</u></strong>',
 
+  html:
+    `<div class='mybox'>
+        <div>
+            <img class='myimg' src='/images/home/fb_icon_325x325.png'>
+        </div>
+        <a class='popup-btn' href='https://shopgroup.vn/mua-group-facebook'> Tôi muốn: Mua Group FB</a>
+    </div>
+    <div class='mybox'>
+        <div>
+            <img class='myimg' src='/images/home/social-media.png'>
+        </div>
+        <a class='popup-btn' href='https://m.me/mkmedia.info.vn'> Tôi muốn: Được tư vấn </a>
+    </div>
+    `,
+  showCloseButton: true,
+  confirmButtonText:
+    '<i class="fa fa-thumbs-up"></i> Hủy',
+  confirmButtonAriaLabel: 'Thumbs up, great!',
+})
+</script>
 @endsection

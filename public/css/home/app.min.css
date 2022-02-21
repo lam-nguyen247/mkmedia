@@ -1265,7 +1265,7 @@ input[type=button] {width: auto; overflow: visible;}
   --bg-white: #fff;
   --color-black: #1F2229;
   --bg-black: #1F2229;
-  --bg-btn-icon: #B03939;
+  --bg-btn-icon: #D4B639;
   --bg-primary: #D4B639;
   --bg-style-gray: #f2f2f2;
   --bg-style-gray-2: #e0e0e0;
@@ -2645,9 +2645,10 @@ header .header__nav .title {
     font-size: 15px !important;
   }
 
-  .click {
-    bottom: 60px !important;
-    right: 40px !important;
+  .box-price {
+    right: 0% !important;
+    bottom: -25px !important;
+    width: 100%;
   }
 
   header .header__logo-box img {
@@ -2700,11 +2701,11 @@ header .header__nav .title {
 }
 
 .grid-call .btn-normal a:before {
-  background: #B03939;
+  background: #D4B639;
 }
 
 .grid-call .btn-normal:hover a:before {
-  background: #B03939;
+  background: #D4B639;
 }
 
 .grid-head .subtitle {
@@ -2948,11 +2949,11 @@ header .header__nav .title {
 }
 
 .box-package.active .btn-normal a:before {
-  background: #B03939;
+  background: #D4B639;
 }
 
 .box-package.active .btn-normal:hover a:before {
-  background: #B03939;
+  background: #D4B639;
 }
 
 .grid-package {
@@ -4419,7 +4420,7 @@ form .btn-normal a:hover .btn-normal__title {
 }
 
 .page-wrapper.page-contact .grid-contact .grid-contact__form .btn-normal a:after {
-  background: #B03939;
+  background: #D4B639;
 }
 
 .page-wrapper.page-digital .grid-call--digital .btn-normal a,
@@ -5390,7 +5391,7 @@ footer .footer-content .footer-list.footer-list--social li a:hover {
   }
 
   .grid-call {
-    padding: 5rem 0;
+    padding: 1rem 0 0 0;
   }
 
   .box-service-home .box-image {
@@ -5726,6 +5727,17 @@ footer .footer-content .footer-list.footer-list--social li a:hover {
   color: white;
 }
 
+.box-price {
+  right: 110px;
+  display: inline-block;
+  position: absolute;
+  bottom: 20px;
+}
+
+.box-price .btn-normal {
+  bottom: 30px;
+}
+
 .click {
   position: relative;
   visibility: visible;
@@ -5738,8 +5750,6 @@ footer .footer-content .footer-list.footer-list--social li a:hover {
   -webkit-transform: translateZ(0);
   transition: visibility 0.5s;
   display: inline-block;
-  bottom: 150px;
-  right: 300px;
 }
 
 .click .ring-circle {
