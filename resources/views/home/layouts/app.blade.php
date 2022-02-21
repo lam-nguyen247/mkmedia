@@ -254,13 +254,13 @@
     <div class="messenger">
       <div class="ring">
             <div class="">
-            <a href="https://m.me/mkmedia.info" class="btn-img" target="_blank">
+            <a href="https://m.me/mkmedia.info.vn" class="btn-img" target="_blank">
                 <img src="/images/home/social-media.png" width="38">
             </a>
         </div>
       </div>
       <div class="bar">
-        <a href="https://m.me/mkmedia.info" target="_blank">
+        <a href="https://m.me/mkmedia.info.vn" target="_blank">
           <span class="text-hotline">Facebook</span>
         </a>
       </div>
