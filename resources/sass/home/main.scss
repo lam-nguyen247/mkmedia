@@ -1,6 +1,6 @@
 $color-main: #CA7559 !default;
 $color-main-2: #F8C8B8 !default;
-$color-primary: #D4B639 !default;
+$color-primary: #EFDD5A !default;
 $color-text: #000 !default;
 $bg-white: #fff !default;
 $color-white: #fff !default;
@@ -11,16 +11,16 @@ $bg-style-gray: #f2f2f2 !default;
 $bg-black: #2196F3 !default;
 $bg-hero: #14161B !default;
 $color-black: #1F2229 !default;
-$bg-primary: #D4B639 !default;
-$bg-btn-icon: #D4B639 !default;
+$bg-primary: #EFDD5A !default;
+$bg-btn-icon: #EFDD5A !default;
 $bg-btn-icon-pale: #4F4F4F !default;
 :root {
     --color-white: #fff;
     --bg-white: #fff;
     --color-black: #1F2229;
     --bg-black: #1F2229;
-    --bg-btn-icon: #D4B639;
-    --bg-primary: #D4B639;
+    --bg-btn-icon: #EFDD5A;
+    --bg-primary: #EFDD5A;
     --bg-style-gray: #f2f2f2;
     --bg-style-gray-2: #e0e0e0;
     --bg-hero: url('../../../public/images/home/mkmedia-bg.png');
@@ -994,7 +994,7 @@ header {
 }
 
 .navigation__button {
-    background-color: #D4B639;
+    background-color: #EFDD5A;
     height: 41px;
     width: 41px;
     position: fixed;
@@ -3448,7 +3448,7 @@ footer {
     svg.icon {
         height: 16px;
         width: 16px;
-        fill: #D4B639;
+        fill: #EFDD5A;
         &:first-child {
             margin-right: 5px;
             display: none;
