@@ -77,7 +77,6 @@
     <div id="navigation__title" class="navigation__title menu" >
         <nav class="site-nav">
             <ul class="my-menu">
-                {{-- <li class="my-item"><a href="/@lang('about-us')" class="navigation__link">@lang('About Us')</a></li> --}}
                 <li class="my-item">
                     <a href="/mua-group-facebook">Danh sách Group</a>
                 </li class="my-item">
@@ -123,16 +122,8 @@
                         <div class="navigation__content">
                             <h4 class="navigation__lable" data-cms="{{app()->getLocale()}}-layouts-app-47">Menu</h4>
                             <ul class="navigation__list" id="navi-menu">
-                                {{-- <li class="navigation__item active">
-                                    <a href="/@lang('about-us')" class="navigation__link">►@lang('About Us')</a>
-                                </li> --}}
                                 <li class="navigation__item">
-                                    <p  class="navigation__link" >►Dịch vụ</p>
-                                    <ul class="sub-menu">
-                                        <li class="sub-item">
-                                           <a href="/mua-group-facebook">Bán Group</a>
-                                        </li>
-                                    </ul>
+                                    <a href="/mua-group-facebook">Danh sách Group</a>
                                 </li>
                                 <li class="navigation__item">
                                     <a href="/@lang('news')" class="navigation__link" >►@lang('News')</a>
