@@ -45,7 +45,7 @@ class GoogleSheetApiCommand extends Command
 		$client = $this->getGoogleClient();
 		$service = new Google_Service_Sheets($client);
 		$spreadsheetId = env('GOOGLE_SHEET_ID');
-		$range = 'Trang tính1!A1:E';
+		$range = 'Group!A2:H';
 
 		// get values
 		$response = $service->spreadsheets_values->get($spreadsheetId, $range);
