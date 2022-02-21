@@ -123,7 +123,7 @@
                             <h4 class="navigation__lable" data-cms="{{app()->getLocale()}}-layouts-app-47">Menu</h4>
                             <ul class="navigation__list" id="navi-menu">
                                 <li class="navigation__item">
-                                    <a href="/mua-group-facebook">Danh sách Group</a>
+                                    <a href="/mua-group-facebook" class="navigation__link">►Danh sách Group</a>
                                 </li>
                                 <li class="navigation__item">
                                     <a href="/@lang('news')" class="navigation__link" >►@lang('News')</a>
