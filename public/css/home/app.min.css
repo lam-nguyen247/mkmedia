@@ -2651,6 +2651,51 @@ header .header__nav .title {
     width: 100%;
   }
 
+  .box-price .btn-normal a {
+    height: 20px !important;
+  }
+
+  .box-price .btn-normal a::before {
+    height: 20px;
+  }
+
+  .box-price .btn-normal .btn-normal__title {
+    margin-right: 10px !important;
+  }
+
+  .click {
+    width: 55px !important;
+    height: 50px !important;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .click .ring-circle {
+    width: 50px !important;
+    height: 50px !important;
+    bottom: 50px !important;
+    left: 5px !important;
+  }
+
+  .click .ring-circle-fill {
+    width: 32.5px !important;
+    height: 32.5px !important;
+    top: 12.5px !important;
+    left: 12.5px !important;
+  }
+
+  .click .ring-img-circle {
+    width: 30px !important;
+    height: 30px !important;
+    top: 16px !important;
+    left: 16px !important;
+  }
+
+  .click .ring-img-circle .btn-img img {
+    width: 15px !important;
+    height: 15px !important;
+  }
+
   header .header__logo-box img {
     height: 60px !important;
   }
