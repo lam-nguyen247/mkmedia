@@ -220,7 +220,7 @@
                 <div class="col-8 col-md-3 col-lg-3">
                     <div class="footer-content">
                         <h3 class="title" data-cms="{{app()->getLocale()}}-layouts-app-footer-10">@lang('Follow us')</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/shopgroup.vn" data-tabs="timeline" data-width="" data-height="200" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/shopgroup.vn" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/shopgroup.vn">mkmedia.info</a></blockquote></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/mkmedia.info.vn/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/mkmedia.info.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mkmedia.info.vn/">Mua Bán Group Fanpage - MK Media</a></blockquote></div>
                     </div>
                 </div>
             </div>
@@ -280,12 +280,14 @@
         </a>
       </div>
     </div>
+    <div id="fb-root"></div>
 </div>
 
 <script
   src="/js/home/jquery-3.6.0.min.js"></script>
 <script async defer crossorigin="anonymous" type="text/javascript" src="/js/home/app.min.js"></script>
-<div id="fb-root"></div>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=2174410252844536&autoLogAppEvents=1" nonce="DUFHJS7Q"></script>
 
 @yield('js')
 </body>
