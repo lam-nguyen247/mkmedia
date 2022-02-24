@@ -1269,8 +1269,8 @@ input[type=button] {width: auto; overflow: visible;}
   --bg-primary: #EFDD5A;
   --bg-style-gray: #f2f2f2;
   --bg-style-gray-2: #e0e0e0;
-  --bg-hero: url(/images/mkmedia-bg.png?48fb78f21f3843806e7583e6b45e1e40);
-  --bg-hero-mb: url(/images/mkmedia-bg.png?48fb78f21f3843806e7583e6b45e1e40);
+  --bg-hero: url(/images/mkmedia-bg.png?6bac0dbac93994c098d2d05d7a1710e4);
+  --bg-hero-mb: url(/images/mkmedia-bg.png?6bac0dbac93994c098d2d05d7a1710e4);
 }
 
 html {
