@@ -68,9 +68,9 @@
                                     </div>
                                 </div>
                                 <div class="col-12" id="box-filter" style="margin-top:10px; text-align: right; order: 3 !important">
-                                    <button id="reset" type="submit" style="background-color: #E1CE69; border: 1px solid #E1CE69; margin-right: 10px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                    <button id="reset" type="submit" style="color:black !important; background-color: #E1CE69; border: 1px solid #E1CE69; margin-right: 10px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                     0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Hủy bỏ</button>
-                                     <button id="submit" type="submit" style="background-color: #8CE78C; border: 1px solid #8CE78C;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                     <button id="submit" type="submit" style="color:black !important; background-color: #8CE78C; border: 1px solid #8CE78C;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                      0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;" >Lọc</button>
                                 </div>
                             </div>
@@ -106,9 +106,9 @@
                                     </td>
                                     <td>
                                         <input value="{{$values[$i][3]}}" type="text" style="display: none;" id="link_{{$i}}"/>
-                                        <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}" alt="{{$values[$i][3]}}" target="_blank" style="background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        <button onclick="xemKenh('{{$values[$i][3]}}')" title="{{$values[$i][3]}}" alt="{{$values[$i][3]}}" target="_blank" style="color:black !important;  background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;" onclick="copy('link_{{$i}}')">Xem group</button>
-                                        <button style="background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        <button style="color:black !important; background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;" onclick="copy('link_{{$i}}')">Sao chép</button>
                                         </td>
 
@@ -119,7 +119,7 @@
                                         {{$values[$i][5]}}
                                     </td>
                                     <td>{{number_format($values[$i][6], 0, ',', '.')}} <br/>
-                                        <button onclick="go()" style="background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
+                                        <button onclick="go()" style="color:black !important; background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua</button>
                                     </td>
                                     <td>
