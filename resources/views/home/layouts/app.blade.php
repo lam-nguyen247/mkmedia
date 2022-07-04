@@ -72,8 +72,8 @@
     {{-- <label id="navigation__button" for="navi-toggle" class="navigation__button">
         <span class="navigation__icon"></span>
     </label>
-    <div id="navigation__background" class="navigation__background"> --}}
-    </div>
+    <div id="navigation__background" class="navigation__background">
+    </div> --}}
     <div id="navigation__title" class="navigation__title menu" >
         <nav class="site-nav">
             <ul class="my-menu">
