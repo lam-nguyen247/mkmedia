@@ -69,9 +69,9 @@
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
     {{-- icon --}}
-    <label id="navigation__button" for="navi-toggle" class="navigation__button">
+    {{-- <label id="navigation__button" for="navi-toggle" class="navigation__button">
         <span class="navigation__icon"></span>
-    </label>
+    </label> --}}
     <div id="navigation__background" class="navigation__background">
     </div>
     <div id="navigation__title" class="navigation__title menu" >
@@ -80,9 +80,9 @@
                 <li class="my-item">
                     <a href="/mua-group-facebook">Danh sách Group</a>
                 </li class="my-item">
-                <li class="my-item"> <a href="/@lang('news')" class="navigation__link" >@lang('News')</a> </li>
+                {{-- <li class="my-item"> <a href="/@lang('news')" class="navigation__link" >@lang('News')</a> </li>
                 <li class="my-item"> <a href="/@lang('contact')" class="navigation__link">@lang('Contact')</a></li>
-                <li class="my-item"><a href="#"> <a href="/thong-tin-thanh-toan" class="navigation__link">Thông tin thanh toán</a></a></li>
+                <li class="my-item"><a href="#"> <a href="/thong-tin-thanh-toan" class="navigation__link">Thông tin thanh toán</a></a></li> --}}
 
             </ul>
           </nav>
