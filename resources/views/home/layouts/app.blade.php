@@ -69,9 +69,9 @@
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
     {{-- icon --}}
-    {{-- <label id="navigation__button" for="navi-toggle" class="navigation__button">
+    <label id="navigation__button" for="navi-toggle" class="navigation__button">
         <span class="navigation__icon"></span>
-    </label> --}}
+    </label>
     <div id="navigation__background" class="navigation__background">
     </div>
     <div id="navigation__title" class="navigation__title menu" >
@@ -87,15 +87,15 @@
             </ul>
           </nav>
     </div>
-    <h3 id="navigation__title" class="navigation__title" style="color:white !important" data-cms="{{app()->getLocale()}}-layouts-app-23">LIÊN HỆ HOTLINE:  0988.50.8769 </h3>
+    {{-- <h3 id="navigation__title" class="navigation__title" style="color:white !important" data-cms="{{app()->getLocale()}}-layouts-app-23">LIÊN HỆ HOTLINE:  0988.50.8769 </h3> --}}
 
     {{-- language --}}
     <div class="navigation__language language-picker js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus">
-        <button class="language-picker__button" onclick="toggleDropdown()">
+        {{-- <button class="language-picker__button" onclick="toggleDropdown()">
             <img class="img-fluid" @src="/images/home/flag_{{app()->getLocale()}}.png" alt="image">
             <em>{{app()->getLocale() == 'en' ? __('English') : __('Vietnamese')}}</em>
             <svg viewBox="0 0 16 16" class="icon"><polygon points="3,5 8,11 13,5 "></polygon></svg>
-        </button>
+        </button> --}}
         <div id="language-content" class="dropdown-content">
             <ul class="language-picker__list">
                 <li>
