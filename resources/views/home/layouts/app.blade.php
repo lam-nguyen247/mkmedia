@@ -69,10 +69,10 @@
     <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
     {{-- icon --}}
-    <label id="navigation__button" for="navi-toggle" class="navigation__button">
+    {{-- <label id="navigation__button" for="navi-toggle" class="navigation__button">
         <span class="navigation__icon"></span>
     </label>
-    <div id="navigation__background" class="navigation__background">
+    <div id="navigation__background" class="navigation__background"> --}}
     </div>
     <div id="navigation__title" class="navigation__title menu" >
         <nav class="site-nav">
@@ -91,11 +91,11 @@
 
     {{-- language --}}
     <div class="navigation__language language-picker js-language-picker" data-trigger-class="btn btn--subtle js-tab-focus">
-        {{-- <button class="language-picker__button" onclick="toggleDropdown()">
+        <button class="language-picker__button" onclick="toggleDropdown()">
             <img class="img-fluid" @src="/images/home/flag_{{app()->getLocale()}}.png" alt="image">
             <em>{{app()->getLocale() == 'en' ? __('English') : __('Vietnamese')}}</em>
             <svg viewBox="0 0 16 16" class="icon"><polygon points="3,5 8,11 13,5 "></polygon></svg>
-        </button> --}}
+        </button>
         <div id="language-content" class="dropdown-content">
             <ul class="language-picker__list">
                 <li>
