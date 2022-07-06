@@ -129,7 +129,8 @@
                             @endfor
                         </tbody>
                     </table>
-                    <h3 style="text-align: center; font-weight: bold;">Còn nhiều Group khác.. Vui lòng liên hệ Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
+                    <h3 style="text-align: center; font-weight: bold;"
+                    data-cms="{{app()->getLocale()}}-channel-index-99">Còn nhiều Group khác.. Vui lòng liên hệ Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
                 </div>
                 <div class="col-12" style="order: 3 !important;">
                     <div class="container">

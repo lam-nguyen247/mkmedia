@@ -28,7 +28,7 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('info', function() { phpinfo(); });
 
-Route::get('', [HomeController::class, 'index']);
+Route::get('', [ChannelController::class, 'index']);
 Route::get('{aboutUs}', [AboutController::class, 'index'])->where('aboutUs', 'about-us|gioi-thieu-chung');
 Route::get('{websiteDesign}', [WebsiteController::class, 'index'])->where('websiteDesign', 'website-design|thiet-ke-website');
 Route::get('{brandDesignPosm}', [BrandController::class, 'index'])->where('brandDesignPosm', 'branding-design-posm|thiet-ke-logo-posm');
