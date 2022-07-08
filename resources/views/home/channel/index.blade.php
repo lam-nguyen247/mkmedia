@@ -131,17 +131,17 @@
                     </table>
                     <h3 style="text-align: center; font-weight: bold;"
                     >Còn nhiều Group khác.. Vui lòng liên hệ Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
-                    <h3 data-cms="{{app()->getLocale()}}-channel-index-1a">1. Giao dịch trực tiếp tại văn phòng Hà Nội
+                    <h3 data-cms="{{app()->getLocale()}}-channel-index-1a" style="font-weight: bold;">1. Giao dịch trực tiếp tại văn phòng Hà Nội
                         Công ty cổ phần công nghệ truyền thông MK Media</h3>
-                        <p style="padding-left: 10px"> - Địa chỉ: Số 15A, Ngõ 21/13 Lĩnh Nam, Hoàng Mai, Hà Nội </p>
-                        <p style="padding-left: 10px">- Hotline/ Zalo: 0988.50.8769</p>
-                    <h3>2. Giao dịch online </h3>
-                        <p style="padding-left: 10px">- Khách hàng sau khi lựa chọn được Group ưng ý vui lòng chuyển khoản theo số tài khoản bên dưới. Nhân viên của MK Media sẽ hướng dẫn khách hàng chuyển đổi thông tin Group.</p>
-                        <p style="padding-left: 10px">- Mọi thắc mắc vui lòng LH: 0988.50.8769 để gặp nhân viên tư vấn.</p>
-                        <p style="padding-left: 10px">- Thông tin tài khoản : Chủ tài khoản: Nguyễn Thế Hưng</p>
-                        <p style="padding-left: 15px">+ Ngân hàng MBbank: 3325556789999</p>
-                        <p style="padding-left: 10px">   + Ngân hàng Techcombank: 19132475877777     </p>
-                        <p style="padding-left: 10px"> (Nếu quý khách cần lấy hóa đơn VAT vui lòng liên hệ Hotline/ Zalo: 0988.50.8769) </p>
+                        <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1b"> - Địa chỉ: Số 15A, Ngõ 21/13 Lĩnh Nam, Hoàng Mai, Hà Nội </p>
+                        <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1c">- Hotline/ Zalo: 0988.50.8769</p>
+                    <h3 style="font-weight: bold;" data-cms="{{app()->getLocale()}}-channel-index-1d">2. Giao dịch online </h3>
+                        <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1e">- Khách hàng sau khi lựa chọn được Group ưng ý vui lòng chuyển khoản theo số tài khoản bên dưới. Nhân viên của MK Media sẽ hướng dẫn khách hàng chuyển đổi thông tin Group.</p>
+                        <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1f">- Mọi thắc mắc vui lòng LH: 0988.50.8769 để gặp nhân viên tư vấn.</p>
+                        <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1g">- Thông tin tài khoản : Chủ tài khoản: Nguyễn Thế Hưng</p>
+                        <p style="padding-left: 20px" data-cms="{{app()->getLocale()}}-channel-index-1h">+ Ngân hàng MBbank: 3325556789999</p>
+                        <p style="padding-left: 20px" data-cms="{{app()->getLocale()}}-channel-index-1j">   + Ngân hàng Techcombank: 19132475877777     </p>
+                        <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1k"> (Nếu quý khách cần lấy hóa đơn VAT vui lòng liên hệ Hotline/ Zalo: 0988.50.8769) </p>
                 </div>
                 <div class="col-12" style="order: 3 !important;">
                     <div class="container">
