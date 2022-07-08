@@ -131,7 +131,7 @@
                     </table>
                     <h3 style="text-align: center; font-weight: bold;"
                     >Còn nhiều Group khác.. Vui lòng liên hệ Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
-                    <h3 data-cms="{{app()->getLocale()}}-channel-index-1a" style="font-weight: bold;">1. Giao dịch trực tiếp tại văn phòng Hà Nội
+                    <h3 data-cms="{{app()->getLocale()}}-channel-index-1a" style="font-weight: bold; margin-top: 10px;">1. Giao dịch trực tiếp tại văn phòng Hà Nội
                         Công ty cổ phần công nghệ truyền thông MK Media</h3>
                         <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1b"> - Địa chỉ: Số 15A, Ngõ 21/13 Lĩnh Nam, Hoàng Mai, Hà Nội </p>
                         <p style="padding-left: 10px" data-cms="{{app()->getLocale()}}-channel-index-1c">- Hotline/ Zalo: 0988.50.8769</p>
