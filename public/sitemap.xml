@@ -6,77 +6,32 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
+
 <url>
   <loc>https://mkmedia.shop/</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
+  <lastmod>2023-03-06T03:11:24+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mkmedia.shop/gioi-thieu-chung</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
   <loc>https://mkmedia.shop/mua-group-facebook</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/mua-kenh-tiktok</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
+  <lastmod>2023-03-06T03:11:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkmedia.shop/tin-tuc</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
+  <lastmod>2023-03-06T03:11:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkmedia.shop/lien-he</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
+  <lastmod>2023-03-06T03:11:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mkmedia.shop/thong-tin-thanh-toan</loc>
-  <lastmod>2021-08-30T04:57:05+00:00</lastmod>
+  <lastmod>2023-03-06T03:11:24+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
-
-<url>
-  <loc>https://mkmedia.shop/</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/gioi-thieu-chung</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/mua-group-facebook</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/mua-kenh-tiktok</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/tin-tuc</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/lien-he</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mkmedia.shop/thong-tin-thanh-toan</loc>
-  <lastmod>2021-08-30T04:55:17+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
 
 </urlset>
