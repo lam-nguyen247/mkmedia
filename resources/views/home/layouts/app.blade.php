@@ -206,7 +206,7 @@
                 <div class="col-8 col-md-3 col-lg-3">
                     <div class="footer-content">
                         <h3 class="title" data-cms="{{app()->getLocale()}}-layouts-app-footer-10">@lang('Follow us')</h3>
-                        <div class="fb-page" data-href="https://www.facebook.com/mkmedia.info.vn/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/mkmedia.info.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mkmedia.info.vn/">Mua Bán Group Fanpage - MK Media</a></blockquote></div>
+                        <div class="fb-page" data-href="https://www.facebook.com/mkmedia.shop.vn/" data-tabs="" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/mkmedia.shop.vn/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/mkmedia.shop.vn/">Mua Bán Group Fanpage - MK Media</a></blockquote></div>
                     </div>
                 </div>
             </div>
@@ -240,13 +240,13 @@
     <div class="messenger">
       <div class="ring">
             <div class="">
-            <a href="https://m.me/mkmedia.info.vn" class="btn-img" target="_blank">
+            <a href="https://m.me/mkmedia.shop.vn" class="btn-img" target="_blank">
                 <img src="/images/home/social-media.png" width="38">
             </a>
         </div>
       </div>
       <div class="bar">
-        <a href="https://m.me/mkmedia.info.vn" target="_blank">
+        <a href="https://m.me/mkmedia.shop.vn" target="_blank">
           <span class="text-hotline">Facebook</span>
         </a>
       </div>

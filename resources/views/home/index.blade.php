@@ -1,7 +1,7 @@
 @extends('home.layouts.app')
 
-@section('title', 'mkmedia.info Đơn Vị Mua Bán Chuyển Nhượng Group Uy Tín')
-@section('description', 'Bạn đang có nhu cầu mua bán Group chất lượng? mkmedia.info - đơn vị mua bán chuyển nhượng Group uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
+@section('title', 'mkmedia.shop Đơn Vị Mua Bán Chuyển Nhượng Group Uy Tín')
+@section('description', 'Bạn đang có nhu cầu mua bán Group chất lượng? mkmedia.shop - đơn vị mua bán chuyển nhượng Group uy tín tại Việt Nam sẽ giúp bạn làm điều đó.')
 @section('css')
 
 <style>
@@ -130,13 +130,13 @@
         <div>
             <img class='myimg' src='/images/home/fb_icon_325x325.png'>
         </div>
-        <a class='popup-btn' href='https://mkmedia.info/mua-group-facebook'> Tôi muốn: Mua Group FB</a>
+        <a class='popup-btn' href='https://mkmedia.shop/mua-group-facebook'> Tôi muốn: Mua Group FB</a>
     </div>
     <div class='mybox'>
         <div>
             <img class='myimg' src='/images/home/social-media.png'>
         </div>
-        <a class='popup-btn' href='https://m.me/mkmedia.info.vn'> Tôi muốn: Được tư vấn </a>
+        <a class='popup-btn' href='https://m.me/mkmedia.shop.vn'> Tôi muốn: Được tư vấn </a>
     </div>
     `,
   showCloseButton: true,

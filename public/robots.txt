@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://mkmedia.info/sitemap.xml
-Sitemap: https://Mkmedia.info/sitemap.xml
+Sitemap: https://mkmedia.shop/sitemap.xml
+Sitemap: https://mkmedia.shop/sitemap.xml

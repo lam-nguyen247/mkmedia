@@ -61,7 +61,7 @@ class ChannelController extends Controller
     public function getGoogleClient()
     {
         $client = new Google_Client();
-        $client->setRedirectUri('https://mkmedia.info/key');
+        $client->setRedirectUri('https://mkmedia.shop/key');
         $client->setApplicationName('Google Sheets API PHP Quickstart');
         $client->setScopes(Google_Service_Sheets::SPREADSHEETS_READONLY);
         $client->setAuthConfig(config_path('credentials.json'));
