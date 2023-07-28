@@ -110,20 +110,13 @@
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;" onclick="copy('link_{{$i}}')">Xem group</button>
                                         <button style="color:black !important; background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;" onclick="copy('link_{{$i}}')">Sao chép</button>
-                                        </td>
-
-                                    {{-- <td>
-                                        {{$values[$i][4]}}
                                     </td>
-                                    <td>
-                                        {{$values[$i][5]}}
-                                    </td> --}}
-                                    <td>{{number_format($values[$i][6], 0, ',', '.')}} <br/>
+                                    <td>{{number_format($values[$i][4], 0, ',', '.')}} <br/>
                                         <button onclick="go()" style="color:black !important; background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt mua</button>
                                     </td>
                                     <td>
-                                        {{isset($values[$i][7])?$values[$i][7]:''}}
+                                        {{isset($values[$i][5])?$values[$i][5]:''}}
                                     </td>
                                 </tr>
                             @endfor
