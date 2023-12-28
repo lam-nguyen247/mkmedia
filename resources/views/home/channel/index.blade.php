@@ -272,12 +272,6 @@
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 },
-                "columnDefs": [{
-                    "render": function(data, type, row) {
-                        return commaSeparateNumber(data);
-                    },
-                    "targets": [1, 4]
-                }, ]
             });
         });
 
