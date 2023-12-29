@@ -242,8 +242,7 @@
         }
 
         $(document).ready(function() {
-            console.log(222);
-            $('#customers').DataTable({
+            var table = $('#customers').DataTable({
                 'pageLength': 25,
                 'responsive': true,
                 "order": [
@@ -278,14 +277,7 @@
                     targets: 1
                 }]
             });
+            console.log(table);
         });
-
-        function commaSeparateNumber(val) {
-            while (/(\d+)(\d{3})/.test(val.toString())) {
-                val = val.toString().replace(/(\d+)(\d{3})/, '$1' + ',' + '$2');
-            }
-
-            return val;
-        }
     </script>
 @endsection
