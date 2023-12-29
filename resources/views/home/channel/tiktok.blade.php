@@ -254,6 +254,13 @@
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 },
+                "formatter": function(data) {
+                    if (isNumeric(data)) {
+                        return parseFloat(data);
+                    } else {
+                        return data;
+                    }
+                },
             });
         });
     </script>
