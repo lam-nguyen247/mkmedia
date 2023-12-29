@@ -267,6 +267,7 @@
             }
 
             // Hàm sort cho cột "price"
+            console.log(table.column(1).data());
             table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
                 b)); // Áp dụng hàm formatNumber khi sort
             table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
