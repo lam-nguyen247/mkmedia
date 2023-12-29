@@ -255,6 +255,7 @@
                     }
                 },
                 "formatter": function(data) {
+                    console.log(data);
                     if (isNumeric(data)) {
                         return parseFloat(data);
                     } else {
