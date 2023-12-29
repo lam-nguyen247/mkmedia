@@ -297,17 +297,11 @@
             table.on('draw', function() {
                 $('td:nth-child(2)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('vi-VN', {
-                        style: 'currency',
-                        currency: 'VND'
-                    }));
+                    $(this).text(value.toLocaleString('vi-VN'));
                 });
                 $('td:nth-child(5)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('vi-VN', {
-                        style: 'currency',
-                        currency: 'VND'
-                    }));
+                    $(this).text(value.toLocaleString('vi-VN'));
                 });
             });
         });
