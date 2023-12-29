@@ -289,10 +289,10 @@
             }
 
             // Hàm sort cho cột "price"
-            table.column(0).data().sort((a, b) => formatNumber(a) - formatNumber(
-                b));
-            table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
-                b));
+            // table.column(0).data().sort((a, b) => formatNumber(a) - formatNumber(
+            //     b));
+            // table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
+            //     b));
             table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
                 b)); // Áp dụng hàm formatNumber khi sort
             // $('td:nth-child(2)', table.table().body()).each(function() {
