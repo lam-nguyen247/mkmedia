@@ -300,14 +300,14 @@
                     $(this).text(value.toLocaleString('en-US', {
                         style: 'currency',
                         currency: 'USD'
-                    }););
+                    }));
                 });
                 $('td:nth-child(5)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
                     $(this).text(value.toLocaleString('en-US', {
                         style: 'currency',
                         currency: 'USD'
-                    }););
+                    }));
                 });
             });
         });
