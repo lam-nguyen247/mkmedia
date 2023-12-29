@@ -278,6 +278,29 @@
                 }]
             });
             console.log(table);
+
+            // Hàm format giá trị thành số
+            function formatNumber(value) {
+                if (!isNaN(value)) {
+                    return parseFloat(value);
+                } else {
+                    return value;
+                }
+            }
+
+            // Hàm sort cho cột "price"
+
+            table.columns(4).order('asc').draw(); // Sắp xếp cột "price" tăng dần
+            table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
+                b)); // Áp dụng hàm formatNumber khi sort
+
+            // Format giá trị trong cột "price" khi hiển thị
+            table.on('draw', function() {
+                $('td:nth-child(5)', table.table().body()).each(function() {
+                    var value = $(this).text();
+                    $(this).text(formatNumber(value));
+                });
+            });
         });
     </script>
 @endsection
