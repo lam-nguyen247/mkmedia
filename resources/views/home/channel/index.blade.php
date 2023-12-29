@@ -35,7 +35,7 @@
         {{-- Block contact --}}
         <div class="grid-contact" id="grid-hero">
             <div class="container">
-                <div class="grid-head" style="text-align: center">2222
+                <div class="grid-head" style="text-align: center">
                     <h2 class="title" style="text-align: center" data-cms="{{ app()->getLocale() }}-channel-index-4">Danh
                         sách group!</h2>
                     <div class="sapo">
@@ -196,8 +196,9 @@
 @endsection
 @section('js')
     <script src="/js/home/datatables.min.js"></script>
-    <script src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/formatted-numbers.js"></script>
     <script>
+        alert(111);
+
         function go() {
             window.open('/quy-trinh-giao-dich-group-facebook', '_blank');
         }
