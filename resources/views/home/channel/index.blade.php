@@ -288,27 +288,27 @@
             //     b));
             // table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
             //     b));
-            table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
-                b)); // Áp dụng hàm formatNumber khi sort
-            // $('td:nth-child(2)', table.table().body()).each(function() {
+            // table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
+            //     b)); // Áp dụng hàm formatNumber khi sort
+            // // $('td:nth-child(2)', table.table().body()).each(function() {
+            // //     var value = formatNumber($(this).text());
+            // //     $(this).text(value.toLocaleString('ja'));
+            // // });
+            // $('td:nth-child(5)', table.table().body()).each(function() {
             //     var value = formatNumber($(this).text());
             //     $(this).text(value.toLocaleString('ja'));
             // });
-            $('td:nth-child(5)', table.table().body()).each(function() {
-                var value = formatNumber($(this).text());
-                $(this).text(value.toLocaleString('ja'));
-            });
-            // Format giá trị trong cột "price" khi hiển thị
-            table.on('draw', function() {
-                // $('td:nth-child(2)', table.table().body()).each(function() {
-                //     var value = formatNumber($(this).text());
-                //     $(this).text(value.toLocaleString('ja'));
-                // });
-                $('td:nth-child(5)', table.table().body()).each(function() {
-                    var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('ja'));
-                });
-            });
+            // // Format giá trị trong cột "price" khi hiển thị
+            // table.on('draw', function() {
+            //     // $('td:nth-child(2)', table.table().body()).each(function() {
+            //     //     var value = formatNumber($(this).text());
+            //     //     $(this).text(value.toLocaleString('ja'));
+            //     // });
+            //     $('td:nth-child(5)', table.table().body()).each(function() {
+            //         var value = formatNumber($(this).text());
+            //         $(this).text(value.toLocaleString('ja'));
+            //     });
+            // });
         });
     </script>
 @endsection
