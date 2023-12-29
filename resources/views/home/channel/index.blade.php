@@ -194,7 +194,7 @@
         @include('home.includes.consultation')
     </div>
 @endsection
-@section('js')
+{{-- @section('js')
     <script src="/js/home/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/formatted-numbers.js"></script>
     <script>
@@ -288,4 +288,4 @@
             return val;
         }
     </script>
-@endsection
+@endsection --}}
