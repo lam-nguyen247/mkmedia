@@ -223,63 +223,63 @@
             $temp.remove();
         }
 
-        $(document).ready(function() {
-            let table = $('#customers').DataTable({
-                'pageLength': 25,
-                'responsive': true,
-                "order": [
-                    [0, "asc"]
-                ],
-                "language": {
-                    "sProcessing": "Đang tìm kiếm...",
-                    "sLengthMenu": "Hiển thị _MENU_ kênh",
-                    "sZeroRecords": "No se encontraron resultados",
-                    "sEmptyTable": "Ningún dato disponible en esta tabla",
-                    "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ kênh",
-                    "sInfoEmpty": "Không có kênh nào",
-                    "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
-                    "sInfoPostFix": "",
-                    "sSearch": "Tìm kiếm:",
-                    "sUrl": "",
-                    "sInfoThousands": ",",
-                    "sLoadingRecords": "Cargando...",
-                    "oPaginate": {
-                        "sFirst": "Về đầu",
-                        "sLast": "Về cuối",
-                        "sNext": "Tiếp",
-                        "sPrevious": "Lùi"
-                    },
-                    "oAria": {
-                        "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
-                        "sSortDescending": ": Activar para ordenar la columna de manera descendente"
-                    }
-                },
-            });
+        // $(document).ready(function() {
+        //     let table = $('#customers').DataTable({
+        //         'pageLength': 25,
+        //         'responsive': true,
+        //         "order": [
+        //             [0, "asc"]
+        //         ],
+        //         "language": {
+        //             "sProcessing": "Đang tìm kiếm...",
+        //             "sLengthMenu": "Hiển thị _MENU_ kênh",
+        //             "sZeroRecords": "No se encontraron resultados",
+        //             "sEmptyTable": "Ningún dato disponible en esta tabla",
+        //             "sInfo": "Bắt đầu từ kênh _START_ đến _END_ trong tổng _TOTAL_ kênh",
+        //             "sInfoEmpty": "Không có kênh nào",
+        //             "sInfoFiltered": "(filtrado de un total de _MAX_ registros)",
+        //             "sInfoPostFix": "",
+        //             "sSearch": "Tìm kiếm:",
+        //             "sUrl": "",
+        //             "sInfoThousands": ",",
+        //             "sLoadingRecords": "Cargando...",
+        //             "oPaginate": {
+        //                 "sFirst": "Về đầu",
+        //                 "sLast": "Về cuối",
+        //                 "sNext": "Tiếp",
+        //                 "sPrevious": "Lùi"
+        //             },
+        //             "oAria": {
+        //                 "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
+        //                 "sSortDescending": ": Activar para ordenar la columna de manera descendente"
+        //             }
+        //         },
+        //     });
 
 
-            // Hàm format giá trị thành số
-            function formatNumber(value) {
-                if (!isNaN(value)) {
-                    return parseFloat(value);
-                } else {
-                    return value;
-                }
-            }
+        //     // Hàm format giá trị thành số
+        //     function formatNumber(value) {
+        //         if (!isNaN(value)) {
+        //             return parseFloat(value);
+        //         } else {
+        //             return value;
+        //         }
+        //     }
 
-            // Hàm sort cho cột "price"
-            console.log(table.column(1).data());
-            table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
-                b)); // Áp dụng hàm formatNumber khi sort
-            table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
-                b)); // Áp dụng hàm formatNumber khi sort
+        //     // Hàm sort cho cột "price"
+        //     console.log(table.column(1).data());
+        //     table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
+        //         b)); // Áp dụng hàm formatNumber khi sort
+        //     table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
+        //         b)); // Áp dụng hàm formatNumber khi sort
 
-            // Format giá trị trong cột "price" khi hiển thị
-            table.on('draw', function() {
-                $('td:nth-child(2)', table.table().body()).each(function() {
-                    var value = $(this).text();
-                    $(this).text(formatNumber(value));
-                });
-            });
-        });
+        //     // Format giá trị trong cột "price" khi hiển thị
+        //     table.on('draw', function() {
+        //         $('td:nth-child(2)', table.table().body()).each(function() {
+        //             var value = $(this).text();
+        //             $(this).text(formatNumber(value));
+        //         });
+        //     });
+        // });
     </script>
 @endsection
