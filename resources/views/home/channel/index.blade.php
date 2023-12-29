@@ -58,15 +58,15 @@
                                                 <span style="width: 32px; display: inline-block;"> Từ </span> <input
                                                     style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
                                                     placeholder="từ"
-                                                    value="{{ isset($_GET['price_f']) ? $_GET['price_f'] : 0 }}"
-                                                    type="number" id="price_f" name="price_f">
+                                                    value="{{ isset($_GET['price_f']) ? $_GET['price_f'] : 0 }}" type="number"
+                                                    id="price_f" name="price_f">
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                                 <span style="width: 32px; display: inline-block;"> Đến </span> <input
                                                     style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
                                                     placeholder="đến"
-                                                    value="{{ isset($_GET['price_t']) ? $_GET['price_t'] : 0 }}"
-                                                    type="number" id="price_t" name="price_t">
+                                                    value="{{ isset($_GET['price_t']) ? $_GET['price_t'] : 0 }}" type="number"
+                                                    id="price_t" name="price_t">
                                             </div>
 
                                         </div>
@@ -123,8 +123,11 @@
                             <tbody>
                                 @for ($i = 1; $i < count($values); $i++)
                                     <tr>
-                                        <td>{{ $values[$i][0] }}</td>
-                                        <td>{{ $values[$i][1] }}</td>
+                                        <td>
+                                            {{ $values[$i][0] }}
+                                        </td>
+                                        <td>{{ number_format($values[$i][1], 0, ',', '.') }}</td>
+
                                         <td>
                                             {{ $values[$i][2] }}
                                         </td>
@@ -141,12 +144,13 @@
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;"
                                                 onclick="copy('link_{{ $i }}')">Sao chép</button>
                                         </td>
-                                        <td>{{ $values[$i][4] }}</td>
-                                        <td>
+                                        <td>{{ number_format($values[$i][4], 0, ',', '.') }} <br />
                                             <button onclick="go()"
                                                 style="color:black !important; background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                    0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt
                                                 mua</button>
+                                        </td>
+                                        <td>
                                             {{ isset($values[$i][5]) ? $values[$i][5] : '' }}
                                         </td>
                                     </tr>
@@ -238,7 +242,7 @@
         }
 
         $(document).ready(function() {
-            var table = $('#customers').DataTable({
+            $('#customers').DataTable({
                 'pageLength': 25,
                 'responsive': true,
                 "order": [
@@ -267,48 +271,8 @@
                         "sSortAscending": ": Activar para ordenar la columna de manera ascendente",
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
-                },
-                columnDefs: [{
-                    type: 'formatted-num',
-                    targets: 1
-                }]
-            });
-
-            // Hàm format giá trị thành số
-            function formatNumber(value) {
-                if (!isNaN(value)) {
-                    return parseFloat(value);
-                } else {
-                    return value;
                 }
-            }
-
-            // Hàm sort cho cột "price"
-            // table.column(0).data().sort((a, b) => formatNumber(a) - formatNumber(
-            //     b));
-            // table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
-            //     b));
-            // table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
-            //     b)); // Áp dụng hàm formatNumber khi sort
-            // // $('td:nth-child(2)', table.table().body()).each(function() {
-            // //     var value = formatNumber($(this).text());
-            // //     $(this).text(value.toLocaleString('ja'));
-            // // });
-            // $('td:nth-child(5)', table.table().body()).each(function() {
-            //     var value = formatNumber($(this).text());
-            //     $(this).text(value.toLocaleString('ja'));
-            // });
-            // // Format giá trị trong cột "price" khi hiển thị
-            // table.on('draw', function() {
-            //     // $('td:nth-child(2)', table.table().body()).each(function() {
-            //     //     var value = formatNumber($(this).text());
-            //     //     $(this).text(value.toLocaleString('ja'));
-            //     // });
-            //     $('td:nth-child(5)', table.table().body()).each(function() {
-            //         var value = formatNumber($(this).text());
-            //         $(this).text(value.toLocaleString('ja'));
-            //     });
-            // });
+            });
         });
     </script>
 @endsection
