@@ -35,9 +35,9 @@
         {{-- Block contact --}}
         <div class="grid-contact" id="grid-hero">
             <div class="container">
-                <div class="grid-head" style="text-align: center">
+                <div class="grid-head" style="text-align: center">2222
                     <h2 class="title" style="text-align: center" data-cms="{{ app()->getLocale() }}-channel-index-4">Danh
-                        sách group222!</h2>
+                        sách group!</h2>
                     <div class="sapo">
                         <p style="color: black !important" data-cms="{{ app()->getLocale() }}-channel-index-6">Vui lòng liên
                             hệ với chúng tôi qua email hoặc hotline.</p>
