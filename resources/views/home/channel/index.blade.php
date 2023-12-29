@@ -37,7 +37,7 @@
             <div class="container">
                 <div class="grid-head" style="text-align: center">
                     <h2 class="title" style="text-align: center" data-cms="{{ app()->getLocale() }}-channel-index-4">Danh
-                        sách group!</h2>
+                        sách group222!</h2>
                     <div class="sapo">
                         <p style="color: black !important" data-cms="{{ app()->getLocale() }}-channel-index-6">Vui lòng liên
                             hệ với chúng tôi qua email hoặc hotline.</p>
@@ -194,7 +194,7 @@
         @include('home.includes.consultation')
     </div>
 @endsection
-{{-- @section('js')
+@section('js')
     <script src="/js/home/datatables.min.js"></script>
     <script src="https://cdn.datatables.net/plug-ins/1.13.7/sorting/formatted-numbers.js"></script>
     <script>
@@ -288,4 +288,4 @@
             return val;
         }
     </script>
-@endsection --}}
+@endsection
