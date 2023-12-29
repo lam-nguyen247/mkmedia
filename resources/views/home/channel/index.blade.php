@@ -297,9 +297,11 @@
             table.on('draw', function() {
                 $('td:nth-child(1)', table.table().body()).each(function() {
                     var value = $(this).text();
+                    console.log(value);
                     $(this).text(value.toFixed(2));
                 });
                 $('td:nth-child(5)', table.table().body()).each(function() {
+                    console.log(value);
                     var value = $(this).text();
                     $(this).text(value.toFixed(2));
                 });
