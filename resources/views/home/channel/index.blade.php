@@ -297,11 +297,11 @@
             table.on('draw', function() {
                 $('td:nth-child(2)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('vi-VN'));
+                    $(this).text(value.toLocaleString('ja'));
                 });
                 $('td:nth-child(5)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('vi-VN'));
+                    $(this).text(value.toLocaleString('ja'));
                 });
             });
         });
