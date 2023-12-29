@@ -197,8 +197,6 @@
 @section('js')
     <script src="/js/home/datatables.min.js"></script>
     <script>
-        alert(111);
-
         function go() {
             window.open('/quy-trinh-giao-dich-group-facebook', '_blank');
         }
@@ -244,6 +242,7 @@
         }
 
         $(document).ready(function() {
+            console.log(222);
             $('#customers').DataTable({
                 'pageLength': 25,
                 'responsive': true,
