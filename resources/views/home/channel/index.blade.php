@@ -297,6 +297,7 @@
             // Format giá trị trong cột "price" khi hiển thị
             table.on('draw', function() {
                 $('td:nth-child(5)', table.table().body()).each(function() {
+                    console.log($(this).text());
                     var value = $(this).text();
                     $(this).text(formatNumber(value));
                 });
