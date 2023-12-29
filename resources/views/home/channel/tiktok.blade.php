@@ -224,7 +224,7 @@
         }
 
         $(document).ready(function() {
-            $('#customers').DataTable({
+            let table = $('#customers').DataTable({
                 'pageLength': 25,
                 'responsive': true,
                 "order": [
@@ -254,14 +254,30 @@
                         "sSortDescending": ": Activar para ordenar la columna de manera descendente"
                     }
                 },
-                "formatter": function(data) {
-                    console.log(data);
-                    if (isNumeric(data)) {
-                        return parseFloat(data);
-                    } else {
-                        return data;
-                    }
-                },
+            });
+
+
+            // Hàm format giá trị thành số
+            function formatNumber(value) {
+                if (!isNaN(value)) {
+                    return parseFloat(value);
+                } else {
+                    return value;
+                }
+            }
+
+            // Hàm sort cho cột "price"
+            table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
+                b)); // Áp dụng hàm formatNumber khi sort
+            table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
+                b)); // Áp dụng hàm formatNumber khi sort
+
+            // Format giá trị trong cột "price" khi hiển thị
+            table.on('draw', function() {
+                $('td:nth-child(2)', table.table().body()).each(function() {
+                    var value = $(this).text();
+                    $(this).text(formatNumber(value));
+                });
             });
         });
     </script>
