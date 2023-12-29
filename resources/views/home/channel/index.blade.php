@@ -289,7 +289,7 @@
             }
 
             // Hàm sort cho cột "price"
-            table.column(2).data().sort((a, b) => formatNumber(a) - formatNumber(
+            table.column(1).data().sort((a, b) => formatNumber(a) - formatNumber(
                 b));
             table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
                 b)); // Áp dụng hàm formatNumber khi sort
