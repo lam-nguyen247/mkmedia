@@ -295,18 +295,18 @@
 
             // Format giá trị trong cột "price" khi hiển thị
             table.on('draw', function() {
-                $('td:nth-child(1)', table.table().body()).each(function() {
+                $('td:nth-child(2)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('en-US', {
+                    $(this).text(value.toLocaleString('vi-VN', {
                         style: 'currency',
-                        currency: 'USD'
+                        currency: 'VND'
                     }));
                 });
                 $('td:nth-child(5)', table.table().body()).each(function() {
                     var value = formatNumber($(this).text());
-                    $(this).text(value.toLocaleString('en-US', {
+                    $(this).text(value.toLocaleString('vi-VN', {
                         style: 'currency',
-                        currency: 'USD'
+                        currency: 'VND'
                     }));
                 });
             });
