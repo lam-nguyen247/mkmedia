@@ -278,7 +278,6 @@
                     targets: 1
                 }]
             });
-            console.log(table);
 
             // Hàm format giá trị thành số
             function formatNumber(value) {
@@ -291,7 +290,6 @@
 
             // Hàm sort cho cột "price"
 
-            table.columns(4).order('asc').draw(); // Sắp xếp cột "price" tăng dần
             table.column(4).data().sort((a, b) => formatNumber(a) - formatNumber(
                 b)); // Áp dụng hàm formatNumber khi sort
 
@@ -299,7 +297,7 @@
             table.on('draw', function() {
                 $('td:nth-child(5)', table.table().body()).each(function() {
                     var value = $(this).text();
-                    $(this).text(formatNumber(value));
+                    $(this).text(value.toLocalString('en'));
                 });
             });
         });
