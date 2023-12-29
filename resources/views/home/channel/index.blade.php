@@ -295,9 +295,13 @@
 
             // Format giá trị trong cột "price" khi hiển thị
             table.on('draw', function() {
+                $('td:nth-child(1)', table.table().body()).each(function() {
+                    var value = $(this).text();
+                    $(this).text(value.toFixed(2));
+                });
                 $('td:nth-child(5)', table.table().body()).each(function() {
                     var value = $(this).text();
-                    $(this).text(value.toLocalString('en'));
+                    $(this).text(value.toFixed(2));
                 });
             });
         });
