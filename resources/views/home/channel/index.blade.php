@@ -58,15 +58,15 @@
                                                 <span style="width: 32px; display: inline-block;"> Từ </span> <input
                                                     style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
                                                     placeholder="từ"
-                                                    value="{{ isset($_GET['price_f']) ? $_GET['price_f'] : 0 }}" type="number"
-                                                    id="price_f" name="price_f">
+                                                    value="{{ isset($_GET['price_f']) ? $_GET['price_f'] : 0 }}"
+                                                    type="number" id="price_f" name="price_f">
                                             </div>
                                             <div class="col-md-6 col-sm-12">
                                                 <span style="width: 32px; display: inline-block;"> Đến </span> <input
                                                     style="width: 85%; margin-bottom: 10px; margin-left: 5px;"
                                                     placeholder="đến"
-                                                    value="{{ isset($_GET['price_t']) ? $_GET['price_t'] : 0 }}" type="number"
-                                                    id="price_t" name="price_t">
+                                                    value="{{ isset($_GET['price_t']) ? $_GET['price_t'] : 0 }}"
+                                                    type="number" id="price_t" name="price_t">
                                             </div>
 
                                         </div>
@@ -144,13 +144,13 @@
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;"
                                                 onclick="copy('link_{{ $i }}')">Sao chép</button>
                                         </td>
-                                        <td>{{ number_format($values[$i][4], 0, ',', '.') }} <br />
+                                        <td>{{ number_format($values[$i][4], 0, ',', '.') }} </td>
+                                        <td>
                                             <button onclick="go()"
                                                 style="color:black !important; background-color: #E1CE69; border: 1px solid #E1CE69;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt
+                                    0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px;">Đặt
                                                 mua</button>
-                                        </td>
-                                        <td>
+                                            <br />
                                             {{ isset($values[$i][5]) ? $values[$i][5] : '' }}
                                         </td>
                                     </tr>
