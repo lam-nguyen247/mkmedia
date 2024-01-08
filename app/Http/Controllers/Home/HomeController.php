@@ -17,6 +17,6 @@ class HomeController extends Controller
     public function zalo(Request $request)
     {
         $agent = new Agent();
-        return view('channel.zalo', compact('agent'));
+        return view('home.channel.zalo', compact('agent'));
     }
 }
