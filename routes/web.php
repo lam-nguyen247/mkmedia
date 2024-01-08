@@ -47,6 +47,8 @@ Route::get('chuyen-nhuong-lai-kenh-tiktok', [PageController::class,'transTiktok'
 Route::get('quy-trinh-giao-dich-kenh-tiktok', [PageController::class,'methodTiktok']);
 Route::get('thong-tin-thanh-toan', [PageController::class,'info']);
 
+Route::get('zalo', [HomeController::class,'zalo']);
+
 Route::get('{locale}', [LocalizationController::class, 'set'])->name('locale')->where('locale', 'en|vi');
 //Route::get('{provider}/login', [LoginController::class, 'redirectToProvider'])->name('social');
 //Route::get('{provider}/callback', [LoginController::class, 'handleProviderCallback']);
