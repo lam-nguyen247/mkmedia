@@ -313,13 +313,13 @@
             <div class="zalo">
                 <div class="ring">
                     <div class="">
-                        <a href="https://zalo.me/{{ $config->zalo ?? '' }}" class="btn-img" target="_blank">
+                        <a href="#" onclick="copyZalo()" class="btn-img">
                             <img src="/images/home/communication.png" width="38">
                         </a>
                     </div>
                 </div>
                 <div class="bar">
-                    <a href="https://zalo.me/{{ $config->zalo ?? '' }}" target="_blank">
+                    <a href="#" onclick="copyZalo()">
                         <span class="text-hotline">Zalo</span>
                     </a>
                 </div>
@@ -327,6 +327,18 @@
             <div id="fb-root"></div>
         </div>
 
+        <script>
+            function copyZalo() {
+                /* Get the text field */
+                var copyText = "0965590009";
+                var $temp = $("<input>");
+                $("body").append($temp);
+                $temp.val(copyText.value).select();
+                document.execCommand("copy");
+                $temp.remove();
+                alert('Đã sao chép số zalo')
+            }
+        </script>
         <script src="/js/home/jquery-3.6.0.min.js"></script>
         <script async defer crossorigin="anonymous" type="text/javascript" src="/js/home/app.min.js"></script>
 
