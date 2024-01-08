@@ -222,7 +222,7 @@
                     </button>
                 </div>
                 <figure class="main__qr-block">
-                    <div class="main__qr"><img src="/zalo_qr_code.jpg" alt="QR-Code"></div>
+                    <div class="main__qr"><img src="/images/zalo_qr_code.jpg" alt="QR-Code"></div>
                     <figcaption class="main__help-text">Mở Zalo, bấm quét QR để quét và xem trên điện thoại</figcaption>
                 </figure>
         </div>
