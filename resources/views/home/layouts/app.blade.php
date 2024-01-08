@@ -333,7 +333,7 @@
                 var copyText = "0965590009";
                 var $temp = $("<input>");
                 $("body").append($temp);
-                $temp.val(copyText.value).select();
+                $temp.val(copyText).select();
                 document.execCommand("copy");
                 $temp.remove();
                 alert('Đã sao chép số zalo')
