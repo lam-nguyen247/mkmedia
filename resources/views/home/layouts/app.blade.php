@@ -295,20 +295,6 @@
                     </div>
                 </div>
             </div>
-            <div class="messenger">
-                <div class="ring">
-                    <div class="">
-                        <a href="https://m.me/mkmedia.shop.vn" class="btn-img" target="_blank">
-                            <img src="/images/home/social-media.png" width="38">
-                        </a>
-                    </div>
-                </div>
-                <div class="bar">
-                    <a href="https://m.me/mkmedia.shop.vn" target="_blank">
-                        <span class="text-hotline">Facebook</span>
-                    </a>
-                </div>
-            </div>
 
             <div class="zalo">
                 <div class="ring">
