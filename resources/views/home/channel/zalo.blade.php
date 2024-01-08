@@ -210,7 +210,7 @@
                     {{-- <div class="main__profile-name"><span class="main__avatar"><img
                                 src="https://zpsocial-f40-org.zadn.vn/80ce95010671ea2fb360.jpg" alt="Avatar"></span>
                         <div> --}}
-                    <h1 class="main__name">SOC MEDIA</h1>
+                    {{-- <h1 class="main__name">SOC MEDIA</h1> --}}
                     <div class="main__profile-type">Zalo: 0965590009</div>
                     <button onclick="copyZalo()" type="button" class="button medium" title="Nhắn tin qua Zalo"
                         aria-pressed="false" style="width: 240px;"><svg xmlns="http://www.w3.org/2000/svg"
