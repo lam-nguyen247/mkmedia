@@ -239,7 +239,6 @@
             $temp.val(copyText.value).select();
             document.execCommand("copy");
             $temp.remove();
-            alert('Đã sao chép')
         }
 
         $(document).ready(function() {
