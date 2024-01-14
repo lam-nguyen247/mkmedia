@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ session('locale', $config->locale ?? '') }}" data-theme="{{ session('theme', $config->theme ?? '') }}">
+<html data-theme="{{ session('theme', $config->theme ?? '') }}">
 
 <head>
     <meta charset="UTF-8">
