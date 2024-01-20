@@ -295,7 +295,7 @@
                     </div>
                 </div>
             </div>
-            <div class="messenger">
+            {{-- <div class="messenger">
                 <div class="ring">
                     <div class="">
                         <a href="https://telegram.me/mrkieng09" class="btn-img" target="_blank">
@@ -308,7 +308,7 @@
                         <span class="text-hotline">Tele</span>
                     </a>
                 </div>
-            </div>
+            </div> --}}
 
             <div class="zalo">
                 <div class="ring">
