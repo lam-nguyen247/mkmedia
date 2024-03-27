@@ -158,7 +158,7 @@
                             </tbody>
                         </table>
                         <h3 style="text-align: center; font-weight: bold;">Còn nhiều Group khác.. Vui lòng liên hệ
-                            Hotline/Zalo: 0988 508 769 để được tư vấn thêm</h3>
+                            Hotline/Zalo: {{ $config->zalo }} để được tư vấn thêm</h3>
                         <h3 data-cms="{{ app()->getLocale() }}-channel-index-1a"
                             style="font-weight: bold; margin-top: 10px;">1. Giao dịch trực tiếp tại văn phòng Hà Nội
                             Công ty cổ phần công nghệ truyền thông MK Media</h3>
