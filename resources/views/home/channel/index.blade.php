@@ -227,51 +227,18 @@
             }
         })
 
-        function checkAppInstalled(callback) {
-            const fbApp = {
-                url: 'fb://',
-                packageName: 'com.facebook.katana', // Gói tin ứng dụng Facebook cho Android
-            };
-            const intent = document.createElement('a');
-            intent.href = fbApp.url;
-
-            if (intent.能否打开) {
-                callback(true); // Ứng dụng đã được cài đặt
-            } else {
-                callback(false); // Ứng dụng chưa được cài đặt
-            }
-        }
-
         function xemKenh(url) {
+            if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+                // Sử dụng biểu thức chính quy để trích xuất giá trị ID
+                var match = url.match(/\/profile\.php\?id=(\d+)/);
 
-            checkAppInstalled(function(appInstalled) {
-                if (appInstalled) {
-                    // Tạo link mở ứng dụng Facebook
-                    const groupID = getGroupID(url);
-                    const fbLink = `fb://group/${groupID}`;
-                    const linkElement = document.createElement('a');
-                    linkElement.href = fbLink;
-                    linkElement.textContent = 'Mở Nhóm trong Ứng dụng';
-                    document.body.appendChild(linkElement);
-                } else {
-                    // Hiển thị thông báo hướng dẫn cài đặt ứng dụng Facebook
-                    const message = 'Vui lòng cài đặt ứng dụng Facebook để mở nhóm này.';
-                    const installLink = 'https://www.facebook.com/app/'; // Liên kết tải ứng dụng Facebook
-                    alert(message + '\n' + installLink);
+                // Kiểm tra xem có kết quả từ biểu thức chính quy hay không
+                if (match) {
+                    var userID = match[1];
+                    url = 'fb://group/' + userID;
                 }
-            });
-
-            // if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-            //     // Sử dụng biểu thức chính quy để trích xuất giá trị ID
-            //     var match = url.match(/\/profile\.php\?id=(\d+)/);
-
-            //     // Kiểm tra xem có kết quả từ biểu thức chính quy hay không
-            //     if (match) {
-            //         var userID = match[1];
-            //         url = 'fb://group/' + userID;
-            //     }
-            // }
-            // window.open(url + "?app=1");
+            }
+            window.open(url);
         }
 
         function copy(id) {
