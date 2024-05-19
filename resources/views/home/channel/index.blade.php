@@ -238,7 +238,7 @@
             //         url = 'fb://group/' + userID;
             //     }
             // }
-            window.open(url);
+            window.open(url + "?app=1");
         }
 
         function copy(id) {
