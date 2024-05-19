@@ -211,16 +211,6 @@
         })
 
         function xemKenh(url) {
-            if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                // Sử dụng biểu thức chính quy để trích xuất giá trị ID
-                var match = url.match(/\/profile\.php\?id=(\d+)/);
-
-                // Kiểm tra xem có kết quả từ biểu thức chính quy hay không
-                if (match) {
-                    var userID = match[1];
-                    url = 'fb://group/' + userID;
-                }
-            }
             window.open(url, '_blank');
         }
 
