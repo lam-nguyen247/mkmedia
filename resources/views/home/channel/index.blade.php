@@ -134,11 +134,11 @@
                                         <td>
                                             <input value="{{ $values[$i][3] }}" type="text" style="display: none;"
                                                 id="link_{{ $i }}" />
-                                            <a href="{{ $values[$i][3] }}" title="{{ $values[$i][3] }}"
+                                            <button onclick="xemKenh('{{ $values[$i][3] }}')" title="{{ $values[$i][3] }}"
                                                 alt="{{ $values[$i][3] }}" target="_blank"
                                                 style="color:black !important;  background-color: #2196F3; border: 1px solid #2196F3;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
-                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;">Xem
-                                                group</a>
+                                        0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; margin: 5px; min-width: 61px;"
+                                                onclick="copy('link_{{ $i }}')">Xem group</button>
                                             <button
                                                 style="color:black !important; background-color: #8CE78C; border: 1px solid #8CE78C; margin: 5px;  box-shadow: 0 3px 5px -1px rgb(0 0 0 / 20%), 0 6px 10px 0 rgb(0 0 0 / 14%),
                                         0 1px 18px 0 rgb(0 0 0 / 12%); padding: 5px 10px; min-width: 61px;"
@@ -228,17 +228,17 @@
         })
 
         function xemKenh(url) {
-            if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-                // Sử dụng biểu thức chính quy để trích xuất giá trị ID
-                var match = url.match(/\/profile\.php\?id=(\d+)/);
+            // if (/iPhone|iPad|iPod/i.test(navigator.platform) || /iPhone|iPad|iPod/i.test(navigator.userAgent)) {
+            //     // Sử dụng biểu thức chính quy để trích xuất giá trị ID
+            //     var match = url.match(/\/profile\.php\?id=(\d+)/);
 
-                // Kiểm tra xem có kết quả từ biểu thức chính quy hay không
-                if (match) {
-                    var userID = match[1];
-                    url = 'fb://group/' + userID;
-                }
-            }
-            window.open(url, '_blank');
+            //     // Kiểm tra xem có kết quả từ biểu thức chính quy hay không
+            //     if (match) {
+            //         var userID = match[1];
+            //         url = 'fb://group/' + userID;
+            //     }
+            // }
+            window.open(url);
         }
 
         function copy(id) {
