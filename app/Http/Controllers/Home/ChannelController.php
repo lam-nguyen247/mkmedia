@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Home;
 
+define('STDIN',fopen("php://stdin","r"));
+
 use App\Http\Controllers\Controller;
 use Exception;
 use Google_Client;
@@ -12,7 +14,6 @@ use App\Models\Page;
 class ChannelController extends Controller
 {
     public function index(Request $request)
-
     {
 		$client = $this->getGoogleClient();
 		$service = new Google_Service_Sheets($client);
