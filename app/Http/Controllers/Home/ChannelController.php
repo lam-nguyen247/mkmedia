@@ -69,7 +69,6 @@ class ChannelController extends Controller
         $client->setAccessType('offline');
 
         $tokenPath = storage_path('app/token.json');
-        dd($tokenPath);
         if (file_exists($tokenPath)) {
             $accessToken = json_decode(file_get_contents($tokenPath), true);
             $client->setAccessToken($accessToken);
