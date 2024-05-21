@@ -73,8 +73,25 @@ class ChannelController extends Controller
             $accessToken = json_decode(file_get_contents($tokenPath), true);
             $client->setAccessToken($accessToken);
         }
+
         if ($client->isAccessTokenExpired()) {
-            $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
+            if ($client->getRefreshToken()) {
+                $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
+            } else {
+                $authUrl = $client->createAuthUrl();
+                printf("Open the following link in your browser:\n%s\n", $authUrl);
+                print 'Enter verification code: ';
+                $authCode = trim(fgets(STDIN));
+
+                // Exchange authorization code for an access token.
+                $accessToken = $client->fetchAccessTokenWithAuthCode($authCode);
+                $client->setAccessToken($accessToken);
+
+                // Check to see if there was an error.
+                if (array_key_exists('error', $accessToken)) {
+                    throw new Exception(join(', ', $accessToken));
+                }
+            }
 
             if (!file_exists(dirname($tokenPath))) {
                 mkdir(dirname($tokenPath), 0700, true);
